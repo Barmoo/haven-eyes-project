@@ -19,12 +19,6 @@ const Hero = () => {
             </button>
           </Link>
 
-          <Link to="/book-hearing-test">
-            <button className="w-full sm:w-auto bg-[#004B2E] text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full font-semibold hover:bg-green-700 transition text-sm sm:text-base">
-              Book a hearing test
-            </button>
-          </Link>
-
           <Link to="/book-contact-lens">
             <button className="w-full sm:w-auto bg-[#004B2E] text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full font-semibold hover:bg-green-700 transition text-sm sm:text-base">
               Book a contact lens

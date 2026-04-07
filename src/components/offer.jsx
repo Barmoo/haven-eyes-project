@@ -13,7 +13,7 @@ const Offer = () => {
             </div>
 
             {/* Offer 1 - 2 for 1 (text left, image right) */}
-            <div className="flex flex-col lg:flex-row w-full min-h-auto lg:min-h-[500px]">
+            <div className="flex flex-col lg:flex-row w-full min-h-auto lg:min-h-125">
 
                 {/* Left - Text */}
                 <div className="flex flex-col justify-center w-full lg:w-1/2 px-4 sm:px-8 lg:px-16 py-6 sm:py-12 lg:py-16">
@@ -37,17 +37,17 @@ const Offer = () => {
                 </div>
 
                 {/* Right - Image */}
-                <div className="w-full lg:w-1/2 min-h-64 sm:min-h-80 lg:min-h-[500px] flex justify-center items-center px-4 sm:pr-6 lg:pr-6 mt-4 lg:mt-0">
+                <div className="w-full lg:w-1/2 min-h-64 sm:min-h-80 lg:min-h-125 flex justify-center items-center px-4 sm:pr-6 lg:pr-6 mt-4 lg:mt-0">
                     <img src="/images/offers/offe.png" alt="2 for 1 offers" className="w-full max-w-sm sm:max-w-none h-full object-cover rounded-lg" />
                 </div>
 
             </div>
 
             {/* Offer 2 - Hearing aid promise (image left, text right) */}
-            <div className="flex flex-col lg:flex-row-reverse w-full min-h-auto lg:min-h-[500px] mt-8 sm:mt-12 lg:mt-16">
+            <div className="flex flex-col lg:flex-row-reverse w-full min-h-auto lg:min-h-125 mt-8 sm:mt-12 lg:mt-16">
 
                 {/* Left - Image */}
-                <div className="w-full lg:w-1/2 min-h-64 sm:min-h-80 lg:min-h-[500px] flex justify-center items-center px-4 sm:pl-6 lg:pl-6 mb-4 lg:mb-0">
+                <div className="w-full lg:w-1/2 min-h-64 sm:min-h-80 lg:min-h-125 flex justify-center items-center px-4 sm:pl-6 lg:pl-6 mb-4 lg:mb-0">
                     <img src="/images/Hearing aid promise/HAP.png" alt="Hearing aid promise" className="w-full max-w-sm sm:max-w-none h-full object-cover rounded-lg" />
                 </div>
 
