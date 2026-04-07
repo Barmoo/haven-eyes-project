@@ -11,7 +11,7 @@ const services = [
     {
         title: "Myopia management",
         description:
-            "Myopia, also known as being near-sighted or short-sighted, is a very common cause of blurred vision. At Specsavers, we can offer glasses lenses or contact lenses to help minimise the progression of myopia in children.",
+            "Myopia, also known as being near-sighted or short-sighted, is a very common cause of blurred vision. At Haven Eye, we can offer glasses lenses or contact lenses to help minimise the progression of myopia in children.",
         link: "Find out more",
         image: "/images/help/Myopia-management.png",
     },
