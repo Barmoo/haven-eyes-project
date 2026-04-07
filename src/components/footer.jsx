@@ -11,7 +11,6 @@ const Footer = () => {
               <li>Glasses</li>
               <li>Prescription Sunglasses</li>
               <li>Contact Lenses</li>
-              <li>Hearing Aids</li>
               <li>Offers</li>
               <li>Gift Vouchers</li>
             </ul>
@@ -24,18 +23,6 @@ const Footer = () => {
               <li>Eye test at home</li>
               <li>Corporate eye care</li>
               <li>Ear wax removal</li>
-              <li>Hearing tests at home</li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col items-center sm:items-start">
-            <h4 className="text-base sm:text-lg lg:text-xl font-bold mb-3 sm:mb-4">Eye & ear health</h4>
-            <ul className="list-none m-0 p-0 space-y-1 text-xs sm:text-sm">
-              <li>Eye health</li>
-              <li>Ear health</li>
-              <li>Information for GPs</li>
-              <li>Children's eyecare</li>
-              <li>Help and FAQs</li>
             </ul>
           </div>
 
