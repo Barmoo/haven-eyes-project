@@ -7,9 +7,9 @@ const Navbar = () => {
     { label: 'Glasses', href: '#' },
     { label: 'Contact Lenses', href: '#' },
     { label: 'Eye Tests', href: '#' },
-    { label: 'Hearing', href: '#' },
+    { label: 'Contact Us', href: '#' },
     { label: 'Home visits', href: '#' },
-    { label: 'Offers', href: '#' },
+    { label: 'About', href: '#' },
   ];
 
   return (
