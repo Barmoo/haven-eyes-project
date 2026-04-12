@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
+    { label: 'Home', href: '/', isRoute: true },
     { label: 'Glasses', href: '#' },
     { label: 'Contact Lenses', href: '#' },
     { label: 'Eye Tests', href: '#' },
-    { label: 'Contact Us', href: '#' },
+    { label: 'Contact Us', href: '/contact', isRoute: true },
     { label: 'Home visits', href: '#' },
-    { label: 'About', href: '#' },
+    { label: 'About', href: '/about', isRoute: true },
   ];
 
   return (
@@ -81,20 +83,40 @@ const Navbar = () => {
       </div>
 
       {/* Desktop navigation row (hidden on mobile) */}
-      <div className="hidden lg:block border-t border-gray-200">
+      <div className="hidden lg:block">
         <div className="max-w-screen-2xl mx-auto px-4">
-          <ul className="flex gap-8 items-center justify-center list-none m-0 p-4">
+          <ul className="flex gap-8 items-center justify-center pl-130 list-none m-0 p-4">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a href={item.href} className="text-sm text-gray-700 hover:text-black">
-                  {item.label}
-                </a>
+                {item.isRoute ? (
+                  <NavLink
+                    to={item.href}
+                    className={({ isActive }) =>
+                      `text-sm transition border-b-2 pb-0.5 ${
+                        isActive
+                          ? 'text-[#004B2E] font-semibold border-[#004B2E]'
+                          : 'text-gray-700 hover:text-black border-transparent'
+                      }`
+                    }
+                  >
+                    {item.label}
+                  </NavLink>
+                ) : (
+                  <a href={item.href} className="text-sm text-gray-700 hover:text-black border-b-2 border-transparent pb-0.5">
+                    {item.label}
+                  </a>
+                )}
               </li>
             ))}
-            <li className="ml-auto">
-              <button className="bg-[#004B2E] text-white px-6 py-2 rounded-full text-sm hover:bg-green-800 transition">
+            <li className="ml-8">
+              <a
+                href="https://wa.me/233557767766?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#004B2E] text-white px-6 py-2 rounded-full text-sm hover:bg-green-800 transition inline-block"
+              >
                 Book Appointment
-              </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -107,19 +129,40 @@ const Navbar = () => {
             <ul className="flex flex-col gap-4 list-none m-0 p-0">
               {navItems.map((item, index) => (
                 <li key={index}>
-                  <a 
-                    href={item.href} 
-                    className="text-base text-gray-700 hover:text-green-800 block py-2"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item.label}
-                  </a>
+                  {item.isRoute ? (
+                    <NavLink
+                      to={item.href}
+                      className={({ isActive }) =>
+                        `text-base block py-2 border-l-4 pl-3 transition ${
+                          isActive
+                            ? 'text-[#004B2E] font-semibold border-[#004B2E] bg-green-50'
+                            : 'text-gray-700 hover:text-green-800 border-transparent'
+                        }`
+                      }
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </NavLink>
+                  ) : (
+                    <a
+                      href={item.href}
+                      className="text-base text-gray-700 hover:text-green-800 block py-2 border-l-4 border-transparent pl-3"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </a>
+                  )}
                 </li>
               ))}
               <li className="pt-4 border-t border-gray-200">
-                <button className="w-full bg-[#004B2E] text-white px-6 py-3 rounded-full text-sm hover:bg-green-800 transition">
+                <a
+                  href="https://wa.me/233557767766?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-[#004B2E] text-white px-6 py-3 rounded-full text-sm hover:bg-green-800 transition block text-center"
+                >
                   Book Appointment
-                </button>
+                </a>
               </li>
             </ul>
           </div>
