@@ -8,13 +8,8 @@ const features = [
   },
   {
     icon: <MapPin size={36} strokeWidth={1.5} />,
-    title: "850 local businesses nationwide",
+    title: "Located at Ridge, Accra",
     link: "Find your store",
-  },
-  {
-    icon: <Home size={36} strokeWidth={1.5} />,
-    title: "Home eye tests",
-    link: "Check eligibility",
   },
   {
     icon: <Eye size={36} strokeWidth={1.5} />,

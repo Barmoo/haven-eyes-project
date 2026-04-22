@@ -19,10 +19,15 @@ const Footer = () => {
           <div className="flex flex-col items-center sm:items-start">
             <h4 className="text-base sm:text-lg lg:text-xl font-bold mb-3 sm:mb-4">Services</h4>
             <ul className="list-none m-0 p-0 space-y-1 text-xs sm:text-sm">
-              <li>OTC scans in store</li>
+              <li>Optical Coherence Tomography</li>
               <li>Eye test at home</li>
-              <li>Corporate eye care</li>
-              <li>Ear wax removal</li>
+              <li>Corporate and Insurance eye care</li>
+              <li>Comprehensive Eye Examination</li>
+              <li>Refraction</li>
+              <li>Visual Field Test</li>
+              <li>Pre-operative ophthalmic Assessment</li>
+              <li>Corporate and Insurance Eyecare Programmes</li>
+              <li>Pachymetry</li>
             </ul>
           </div>
 
@@ -31,11 +36,6 @@ const Footer = () => {
             <ul className="list-none m-0 p-0 space-y-1 text-xs sm:text-sm">
               <li>About Haven eye</li>
               <li>Contact us</li>
-              <li>Careers</li>
-              <li>Reports</li>
-              <li>Annual review</li>
-              <li>Sustainability</li>
-              <li>Sitemap</li>
               <li>Haven eye promise</li>
             </ul>
           </div>

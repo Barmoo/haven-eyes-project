@@ -2,7 +2,7 @@ import React from 'react';
 
 const services = [
     {
-        title: "Home eye tests available",
+        title: "Eye tests available",
         description:
             "Our team of mobile opticians provide a comprehensive eyecare service to those who cannot get to one of our stores unaccompanied.",
         link: "Find out more",

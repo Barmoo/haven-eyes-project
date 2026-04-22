@@ -10,7 +10,6 @@ const Navbar = () => {
     { label: 'Contact Lenses', href: '#' },
     { label: 'Eye Tests', href: '#' },
     { label: 'Contact Us', href: '/contact', isRoute: true },
-    { label: 'Home visits', href: '#' },
     { label: 'About', href: '/about', isRoute: true },
   ];
 
