@@ -5,35 +5,35 @@ const Hero = () => {
   const [showMap, setShowMap] = useState(false);
 
   return (
-    <section className="py-8 sm:py-12 lg:py-16 flex items-center justify-center bg-gray-50 px-4 sm:px-6">
-      <div className="max-w-6xl w-full text-center">
+    <section className="bg-gray-50 px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-20 flex justify-center">
+      
+      <div className="w-full max-w-5xl text-center">
 
         {/* Heading */}
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-[#004B2E] font-bold mb-6 sm:mb-8">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#004B2E] font-bold leading-tight mb-8">
           Book Your Appointments Today
         </h1>
 
-        {/* Buttons Row */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full justify-center items-center flex-wrap">
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-4 sm:gap-5">
 
-          <Link to="/book-eye-test">
-            <button className="w-full sm:w-auto bg-[#004B2E] text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full font-semibold hover:bg-green-700 transition text-sm sm:text-base">
+          <Link to="/book-eye-test" className="w-full sm:w-auto">
+            <button className="w-full sm:w-auto bg-[#004B2E] text-white py-3 px-6 rounded-full font-semibold hover:bg-green-700 transition text-sm sm:text-base shadow-sm">
               Book an eye test
             </button>
           </Link>
 
-          <Link to="/book-contact-lens">
-            <button className="w-full sm:w-auto bg-[#004B2E] text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full font-semibold hover:bg-green-700 transition text-sm sm:text-base">
+          <Link to="/book-contact-lens" className="w-full sm:w-auto">
+            <button className="w-full sm:w-auto bg-[#004B2E] text-white py-3 px-6 rounded-full font-semibold hover:bg-green-700 transition text-sm sm:text-base shadow-sm">
               Book a contact lens
             </button>
           </Link>
 
-          {/* View Location Button (now inline) */}
+          {/* Location Button */}
           <button
             onClick={() => setShowMap(!showMap)}
-            className="w-full sm:w-auto bg-[#004B2E] text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full font-semibold hover:bg-green-700 transition text-sm sm:text-base flex items-center gap-2 justify-center"
+            className="w-full sm:w-auto bg-[#004B2E] text-white py-3 px-6 rounded-full font-semibold hover:bg-green-700 transition text-sm sm:text-base flex items-center justify-center gap-2 shadow-sm"
           >
-            {/* Icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -49,17 +49,19 @@ const Hero = () => {
 
         </div>
 
-        {/* Map appears BELOW buttons */}
+        {/* Map Section */}
         {showMap && (
-          <div className="mt-8 w-full max-w-3xl mx-auto h-80 sm:h-96 rounded-xl overflow-hidden shadow-2xl border border-gray-100 animate-fadeIn">
-            <iframe
-              title="Haven Eye location map"
-              src="https://maps.google.com/maps?q=No.+22+Ambassadorial+Enclave+Adjacent+Bank+of+Ghana+Building+Accra&t=&z=15&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              loading="lazy"
-            ></iframe>
+          <div className="mt-10 w-full flex justify-center">
+            <div className="w-full max-w-3xl h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-xl border border-gray-200">
+              <iframe
+                title="Haven Eye location map"
+                src="https://maps.google.com/maps?q=No.+22+Ambassadorial+Enclave+Adjacent+Bank+of+Ghana+Building+Accra&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
         )}
 
