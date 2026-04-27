@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { InlineWidget } from "react-calendly";
 
 const Hero = () => {
   const [showMap, setShowMap] = useState(false);
+  const [showCalendar, setShowCalendar] = useState(false);
 
   return (
     <section className="bg-gray-50 px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-20 flex justify-center">
@@ -17,37 +18,59 @@ const Hero = () => {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-4 sm:gap-5">
 
-          <Link to="/book-eye-test" className="w-full sm:w-auto">
-            <button className="w-full sm:w-auto bg-[#004B2E] text-white py-3 px-6 rounded-full font-semibold hover:bg-green-700 transition text-sm sm:text-base shadow-sm">
-              Book an eye test
-            </button>
-          </Link>
+          {/* Book Eye Test (Calendar toggle) */}
+          <button
+            onClick={() => {
+              setShowCalendar(!showCalendar);
+              setShowMap(false);
+            }}
+            className="w-full sm:w-auto bg-[#004B2E] text-white py-3 px-6 rounded-full font-semibold hover:bg-green-700 transition text-sm sm:text-base shadow-sm"
+          >
+            {showCalendar ? "Close Booking" : "Book an eye test"}
+          </button>
 
-          <Link to="/book-contact-lens" className="w-full sm:w-auto">
-            <button className="w-full sm:w-auto bg-[#004B2E] text-white py-3 px-6 rounded-full font-semibold hover:bg-green-700 transition text-sm sm:text-base shadow-sm">
-              Book a contact lens
-            </button>
-          </Link>
+          {/* Contact Lens (reuse same calendar or separate link) */}
+          <button
+            onClick={() => {
+              setShowCalendar(!showCalendar);
+              setShowMap(false);
+            }}
+            className="w-full sm:w-auto bg-white border border-[#004B2E] text-[#004B2E] py-3 px-6 rounded-full font-semibold hover:bg-[#004B2E] hover:text-white transition text-sm sm:text-base shadow-sm"
+          >
+            Book an appointment
+          </button>
 
           {/* Location Button */}
           <button
-            onClick={() => setShowMap(!showMap)}
+            onClick={() => {
+              setShowMap(!showMap);
+              setShowCalendar(false);
+            }}
             className="w-full sm:w-auto bg-[#004B2E] text-white py-3 px-6 rounded-full font-semibold hover:bg-green-700 transition text-sm sm:text-base flex items-center justify-center gap-2 shadow-sm"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
-            </svg>
-
-            {showMap ? "Hide Map" : "View Location"}
+            📍 {showMap ? "Hide Map" : "View Location"}
           </button>
 
         </div>
+
+        {/* Calendar Section */}
+        {showCalendar && (
+          <div className="mt-10 w-full flex justify-center">
+            <div className="w-full max-w-4xl bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+              
+              {/* Header */}
+              <div className="bg-[#004B2E] text-white py-4 text-center font-semibold">
+                Select a Date & Time (8AM – 5PM GMT)
+              </div>
+
+              {/* Calendly Embed */}
+              <InlineWidget
+                url="https://calendly.com/haveneyeltd/eye-test"
+                styles={{ height: "650px" }}
+              />
+            </div>
+          </div>
+        )}
 
         {/* Map Section */}
         {showMap && (
