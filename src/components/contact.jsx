@@ -66,11 +66,11 @@ const Contact = () => {
                 <span>0596 915 333</span>
               </a>
               <a
-                href="mailto:info@haven-eye.com"
+                href="mailto:info@haveneyeltd.com"
                 className="flex items-center gap-3 text-[#016C42] hover:underline text-sm"
               >
                 <EmailIcon />
-                <span>info@haven-eye.com</span>
+                <span>info@haveneyeltd.com</span>
               </a>
               <a
                 href="https://wa.me/233557767766"
@@ -129,8 +129,8 @@ const Contact = () => {
                 <p className="flex items-center gap-2">
                   <EmailIcon />
                   Email Address:{' '}
-                  <a href="mailto:info@haven-eye.com" className="text-[#016C42] hover:underline ml-1">
-                    info@haven-eye.com
+                  <a href="mailto:info@haveneyeltd.com" className="text-[#016C42] hover:underline ml-1">
+                    info@haveneyeltd.com
                   </a>
                 </p>
                 <p className="flex items-center gap-2">
