@@ -7,8 +7,8 @@ const Navbar = () => {
   const navItems = [
     { label: 'Home', href: '/', isRoute: true },
     { label: 'Glasses', href: '#' },
-    { label: 'Contact Lenses', href: '#' },
-    { label: 'Eye Tests', href: '#' },
+    { label: 'Contact Lenses', href: '#contact-lenses' },
+    { label: 'Eye Tests', href: '#eye-tests' },
     { label: 'Contact Us', href: '/contact', isRoute: true },
     { label: 'About', href: '/about', isRoute: true },
   ];
