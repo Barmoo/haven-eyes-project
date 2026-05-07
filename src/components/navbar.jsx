@@ -33,11 +33,11 @@ const Navbar = () => {
 
         {/* Left: Find a store (desktop only) */}
         <a
-          href="https://www.google.com/maps/search/?api=1&query=optometrist+eye+clinic+Ghana"
+          href="https://www.google.com/maps/search/?api=1&query=Haven+Eye+Clinic+near+Bank+of+Ghana"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden sm:inline-flex items-center gap-2 text-xs sm:text-sm text-gray-700 hover:text-[#004B2E] transition-colors"
-          aria-label="Find a store near you"
+          aria-label="Find Haven Eye Clinic near Bank of Ghana"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
