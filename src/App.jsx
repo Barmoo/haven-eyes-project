@@ -9,6 +9,7 @@ import Offer from './components/offer';
 import Service from './components/service';
 import Contact from './components/contact';
 import About from './components/about';
+import Glasses from './components/glasses';
 
 const HomePage = () => (
   <>
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/glasses" element={<Glasses />} />
       </Routes>
       <Footer />
     </div>
