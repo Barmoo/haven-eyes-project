@@ -11,13 +11,13 @@ import Contact from './components/contact';
 import About from './components/about';
 import Glasses from './components/glasses';
 
+
 const HomePage = () => (
   <>
     <Hero />
     <Feature />
     <Product />
     <Offer />
-    <Service />
   </>
 );
 
@@ -30,6 +30,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/glasses" element={<Glasses />} />
+        <Route path="/services" element={<Service />} />
       </Routes>
       <Footer />
     </div>

@@ -9,6 +9,7 @@ const Navbar = () => {
     { label: 'Glasses', href: '/glasses', isRoute: true },
     { label: 'Contact Lenses', href: '#contact-lenses' },
     { label: 'Eye Tests', href: '#eye-tests' },
+    { label: 'Services', href: '/services', isRoute: true },
     { label: 'Contact Us', href: '/contact', isRoute: true },
     { label: 'About', href: '/about', isRoute: true },
   ];
@@ -32,9 +33,11 @@ const Navbar = () => {
 
         {/* Left: Find a store (desktop only) */}
         <a
-          href="#find-store"
-          className="hidden sm:inline-flex items-center gap-2 text-xs sm:text-sm text-gray-700 hover:text-black"
-          aria-label="Find a store"
+          href="https://www.google.com/maps/search/?api=1&query=optometrist+eye+clinic+Ghana"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden sm:inline-flex items-center gap-2 text-xs sm:text-sm text-gray-700 hover:text-[#004B2E] transition-colors"
+          aria-label="Find a store near you"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
@@ -47,95 +50,68 @@ const Navbar = () => {
 
         {/* Right: actions */}
         <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
-          <button
-            className="hidden md:inline-block px-4 lg:px-10 py-1 sm:py-2 rounded-full bg-white text-xs sm:text-sm border border-[#016C42] text-[#016C42]"
-            aria-label="Re-order contact lenses"
-          >
-            Re-order
-          </button>
-          <button className="hidden sm:block px-2 py-1 text-xs sm:text-sm">Log in</button>
-
-          {/* Heart (favorites) */}
-          <button
-            aria-label="Favorites"
-            className="p-2 rounded hover:bg-gray-100 text-gray-700"
-            title="Favorites"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
-              <path d="M12.1 21.35l-1.1-1.01C5.14 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.14 6.86-8.99 11.84l-1.9 1.01z"/>
-            </svg>
-          </button>
-
-          {/* Shopping bag (cart) */}
-          <button
-            aria-label="Cart"
-            className="p-2 rounded hover:bg-gray-100 text-gray-700"
-            title="Cart"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
-              <path d="M6 2h12l-1.2 6H7.2L6 2z" fill="currentColor"/>
-              <path d="M6 8h12v11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8z" stroke="currentColor" strokeWidth="1" fill="none"/>
-              <path d="M9 11a3 3 0 0 1 6 0" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-            </svg>
-          </button>
+          {/* Actions removed as requested */}
         </div>
       </div>
 
       {/* Desktop navigation row (hidden on mobile) */}
       <div className="hidden lg:block">
         <div className="max-w-screen-2xl mx-auto px-4">
-          <ul className="flex gap-8 items-center justify-center pl-130 list-none m-0 p-4">
-            {navItems.map((item, index) => (
-              <li key={index}>
-                {item.isRoute ? (
-                  <NavLink
-                    to={item.href}
-                    className={({ isActive }) =>
-                      `text-sm transition border-b-2 pb-0.5 ${
-                        isActive
-                          ? 'text-[#004B2E] font-semibold border-[#004B2E]'
-                          : 'text-gray-700 hover:text-black border-transparent'
-                      }`
-                    }
-                  >
-                    {item.label}
-                  </NavLink>
-                ) : (
-                  <a href={item.href} className="text-sm text-gray-700 hover:text-black border-b-2 border-transparent pb-0.5">
-                    {item.label}
-                  </a>
-                )}
-              </li>
-            ))}
-            <li className="ml-8">
-              <a
-                href="https://wa.me/233557767766?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#004B2E] text-white px-6 py-2 rounded-full text-sm hover:bg-green-800 transition inline-block"
-              >
-                Book Appointment
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Mobile menu (visible when open) */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-gray-200 bg-white">
-          <div className="px-4 py-4">
-            <ul className="flex flex-col gap-4 list-none m-0 p-0">
+          <div className="flex items-center justify-end py-3 gap-8">
+            {/* Navigation Links */}
+            <ul className="flex gap-8 items-center list-none m-0 p-0">
               {navItems.map((item, index) => (
                 <li key={index}>
                   {item.isRoute ? (
                     <NavLink
                       to={item.href}
                       className={({ isActive }) =>
-                        `text-base block py-2 border-l-4 pl-3 transition ${
+                        `text-sm font-medium transition-colors duration-200 border-b-2 pb-1 ${
                           isActive
-                            ? 'text-[#004B2E] font-semibold border-[#004B2E] bg-green-50'
-                            : 'text-gray-700 hover:text-green-800 border-transparent'
+                            ? 'text-[#004B2E] font-semibold border-[#004B2E]'
+                            : 'text-gray-700 hover:text-[#004B2E] border-transparent hover:border-[#004B2E]'
+                        }`
+                      }
+                    >
+                      {item.label}
+                    </NavLink>
+                  ) : (
+                    <a href={item.href} className="text-sm font-medium text-gray-700 hover:text-[#004B2E] border-b-2 border-transparent pb-1 hover:border-[#004B2E] transition-colors duration-200">
+                      {item.label}
+                    </a>
+                  )}
+                </li>
+              ))}
+            </ul>
+
+            {/* CTA Button */}
+            <a
+              href="https://wa.me/233557767766?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#004B2E] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#003d26] transition-colors duration-200 shadow-sm hover:shadow-md"
+            >
+              Book Appointment
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile menu (visible when open) */}
+      {mobileMenuOpen && (
+        <div className="lg:hidden border-t border-gray-200 bg-white shadow-lg">
+          <div className="px-4 py-6">
+            <ul className="flex flex-col gap-1 list-none m-0 p-0">
+              {navItems.map((item, index) => (
+                <li key={index}>
+                  {item.isRoute ? (
+                    <NavLink
+                      to={item.href}
+                      className={({ isActive }) =>
+                        `text-base font-medium block py-3 px-4 rounded-lg transition-all duration-200 ${
+                          isActive
+                            ? 'text-[#004B2E] font-semibold bg-green-50 border-l-4 border-[#004B2E]'
+                            : 'text-gray-700 hover:text-[#004B2E] hover:bg-gray-50 border-l-4 border-transparent'
                         }`
                       }
                       onClick={() => setMobileMenuOpen(false)}
@@ -145,7 +121,7 @@ const Navbar = () => {
                   ) : (
                     <a
                       href={item.href}
-                      className="text-base text-gray-700 hover:text-green-800 block py-2 border-l-4 border-transparent pl-3"
+                      className="text-base font-medium text-gray-700 hover:text-[#004B2E] block py-3 px-4 rounded-lg hover:bg-gray-50 transition-all duration-200 border-l-4 border-transparent"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.label}
@@ -153,12 +129,12 @@ const Navbar = () => {
                   )}
                 </li>
               ))}
-              <li className="pt-4 border-t border-gray-200">
+              <li className="pt-6 border-t border-gray-200 mt-4">
                 <a
                   href="https://wa.me/233557767766?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-[#004B2E] text-white px-6 py-3 rounded-full text-sm hover:bg-green-800 transition block text-center"
+                  className="w-full bg-[#004B2E] text-white px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#003d26] transition-colors duration-200 block text-center shadow-sm hover:shadow-md"
                 >
                   Book Appointment
                 </a>
