@@ -70,7 +70,7 @@ const Service = () => {
     return (
         <div className="flex flex-col w-full bg-gray-50 min-h-screen">
             {/* -------- Header -------- */}
-            <div className="px-4 sm:px-6 lg:px-8 py-16 text-center bg-gradient-to-br from-[#004B2E] to-[#006B3E] text-white relative overflow-hidden">
+            <div className="px-4 sm:px-6 lg:px-8 py-16 text-center bg-linear-to-br from-[#004B2E] to-[#006B3E] text-white relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/10"></div>
                 <div className="relative z-10">
                     <div className="text-6xl mb-4">👁️</div>
@@ -126,7 +126,7 @@ const Service = () => {
             </div>
 
             {/* -------- Call to Action -------- */}
-            <div className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-r from-[#004B2E] to-[#006B3E] text-white text-center relative overflow-hidden">
+            <div className="px-4 sm:px-6 lg:px-8 py-16 bg-linear-to-r from-[#004B2E] to-[#006B3E] text-white text-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="relative z-10 max-w-4xl mx-auto">
                     <h2 className="text-2xl sm:text-3xl font-bold mb-4">
