@@ -138,7 +138,7 @@ const Service = () => {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                         <a
-                            href="https://wa.me/233557767766?text=Hello%20I%20want%20to%20book%20an%20eye%20care%20service"
+                            href="https://wa.me/233596915333?text=Hello%20I%20want%20to%20book%20an%20eye%20care%20service"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-white text-[#004B2E] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
@@ -146,7 +146,7 @@ const Service = () => {
                             📅 Book Appointment
                         </a>
                         <a
-                            href="https://wa.me/233557767766?text=Hello%20I%20want%20to%20learn%20more%20about%20your%20eye%20care%20services"
+                            href="https://wa.me/233596915333?text=Hello%20I%20want%20to%20learn%20more%20about%20your%20eye%20care%20services"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#004B2E] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
@@ -155,7 +155,7 @@ const Service = () => {
                         </a>
                     </div>
                     <div className="text-sm opacity-75">
-                        <p>📍 Located at Ridge, Accra • ☎️ Call us: +233 55 776 776</p>
+                        <p>📍 Located at Ridge, Accra • ☎️ Call us: +233 596 915 333</p>
                     </div>
                 </div>
             </div>
