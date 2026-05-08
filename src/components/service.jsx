@@ -138,7 +138,7 @@ const Service = () => {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                         <a
-                            href="https://outlook.office.com/bookwithme/user/f7806ecbc4ff4aa88596f6f02fd37c56@haveneyeltd.com?anonymous&ismsaljsauthenabled&ep=plink"
+                            href="https://calendly.com/haveneyeltd-info/30min"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-white text-[#004B2E] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
