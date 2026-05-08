@@ -27,10 +27,10 @@ const Offer = () => {
                         With 2 for 1 you can mix styles, switch looks and choose sunnies, safety specs or even contacts as one of your two. A pair for work, a pair for play. One for nightlife, one for the everyday. Why stop at one?
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
-                        <a href="#" className="text-blue-800 font-semibold underline flex items-center gap-1">
+                        <a href="/services" className="text-blue-800 font-semibold underline flex items-center gap-1">
                             Check out 2 for 1 <span>›</span>
                         </a>
-                        <a href="#" className="text-blue-800 font-semibold underline flex items-center gap-1">
+                        <a href="/glasses" className="text-blue-800 font-semibold underline flex items-center gap-1">
                             View glasses <span>›</span>
                         </a>
                     </div>
@@ -63,7 +63,7 @@ const Offer = () => {
                         Found cheaper comparable hearing on the high street? We'll double the difference
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
-                        <a href="#" className="text-blue-800 font-semibold underline flex items-center gap-1">
+                        <a href="/services" className="text-blue-800 font-semibold underline flex items-center gap-1">
                             Browse <span>›</span>
                         </a>
                     </div>

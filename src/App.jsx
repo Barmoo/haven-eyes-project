@@ -23,7 +23,7 @@ const HomePage = () => (
 
 const App = () => {
   return (
-    <div>
+    <div className="min-h-screen">
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />

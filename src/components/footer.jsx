@@ -77,9 +77,8 @@ const Footer = () => {
               <ul className="space-y-2 text-sm">
                 <li><a href="/glasses" className="text-white/80 hover:text-white transition-colors">Designer Frames</a></li>
                 <li><a href="#contact-lenses" className="text-white/80 hover:text-white transition-colors">Contact Lenses</a></li>
-                <li><a href="#" className="text-white/80 hover:text-white transition-colors">Prescription Sunglasses</a></li>
-                <li><a href="#" className="text-white/80 hover:text-white transition-colors">Eye Care Products</a></li>
-                <li><a href="#" className="text-white/80 hover:text-white transition-colors"></a></li>
+                <li><a href="/glasses" className="text-white/80 hover:text-white transition-colors">Prescription Sunglasses</a></li>
+                <li><a href="/services" className="text-white/80 hover:text-white transition-colors">Eye Care Products</a></li>
               </ul>
             </div>
 
@@ -126,10 +125,10 @@ const Footer = () => {
             <div className="text-white/70 mb-4 md:mb-0">
               © {new Date().getFullYear()} Haven Eye. All rights reserved.
             </div>
-            <div className="flex space-x-6 text-white/70">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Accessibility</a>
+            <div className="flex flex-wrap gap-4 text-white/70 justify-center md:justify-end">
+              <a href="#!" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#!" className="hover:text-white transition-colors">Terms of Service</a>
+              <a href="#!" className="hover:text-white transition-colors">Accessibility</a>
             </div>
           </div>
         </div>
