@@ -23,7 +23,7 @@ const Footer = () => {
               </p>
               <div className="flex space-x-4">
                 <a
-                  href="https://web.facebook.com/profile.php?id=61587725984327"
+                  href="https://www.facebook.com/share/18fgviwgh7/?mibextid=wwXIfr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/70 hover:text-white transition-colors"
@@ -34,7 +34,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a
-                  href="https://www.instagram.com/haveneyeltd?utm_source=qr"
+                  href="https://www.instagram.com/haveneyeltd"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/70 hover:text-white transition-colors"
@@ -44,6 +44,17 @@ const Footer = () => {
                     <rect x="2" y="2" width="20" height="20" rx="5" strokeWidth="1.5"/>
                     <path d="M16 11.37a4 4 0 1 1-7.999-.001A4 4 0 0 1 16 11.37z" strokeWidth="1.5"/>
                     <path d="M17.5 6.5h.01" strokeWidth="1.5"/>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.tiktok.com/@haveneyeltd?_r=1&_t=ZS-96Bm35hu9aS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 hover:text-white transition-colors"
+                  aria-label="TikTok"
+                >
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 3.06v6.44a3.5 3.5 0 01-3.48-3.06A3.5 3.5 0 016 9.5c0 1.93 1.57 3.5 3.5 3.5a3.49 3.49 0 003.43-2.6V16a5.5 5.5 0 11-5.5-5.5v2.03A3.5 3.5 0 0013 16.5 3.5 3.5 0 0016.5 13V3.06h-3.5z"/>
                   </svg>
                 </a>
               </div>

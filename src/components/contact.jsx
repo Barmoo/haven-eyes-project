@@ -123,7 +123,7 @@ const Contact = () => {
                 <p>
                   Main office:{' '}
                   <strong>
-                    <a href="tel:+233557767766" className="hover:underline">(233) 55 776 7766</a>
+                    <a href="tel:+233557767766" className="hover:underline">(+233) 55 776 7766</a>
                   </strong>
                 </p>
                 <p className="flex items-center gap-2">
@@ -150,7 +150,7 @@ const Contact = () => {
               {/* Social media */}
               <div className="mt-6 flex items-center gap-4">
                 <a
-                  href="https://www.instagram.com/haveneyeltd?utm_source=qr"
+                  href="https://www.instagram.com/haveneyeltd"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
@@ -161,7 +161,7 @@ const Contact = () => {
                   </svg>
                 </a>
                 <a
-                  href="https://web.facebook.com/profile.php?id=61587725984327"
+                  href="https://www.facebook.com/share/18fgviwgh7/?mibextid=wwXIfr"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
@@ -169,6 +169,18 @@ const Contact = () => {
                 >
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.tiktok.com/@haveneyeltd?_r=1&_t=ZS-96Bm35hu9aS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="TikTok"
+                  className="flex items-center justify-center w-10 h-10 rounded-full bg-black text-white hover:opacity-90 transition"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M12.4 2.95a4.53 4.53 0 0 1 2.88 1.12 4.5 4.5 0 0 1 1.16 3h1.41a5.95 5.95 0 0 0-1.6-4.4A5.94 5.94 0 0 0 12.4 1V2.95z"/>
+                    <path d="M9.56 22.5c-1.91 0-3.45-1.55-3.45-3.47 0-1.79 1.26-3.28 2.94-3.44v2.57a1.02 1.02 0 0 0 .97 1.05c.5.02.96-.36.99-.86V9.18a4.48 4.48 0 0 1-2.45-.77v3.7c0 2.58 1.95 4.7 4.52 4.7.19 0 .38-.01.56-.04v2.95a7.1 7.1 0 0 1-3.08.2z"/>
                   </svg>
                 </a>
               </div>
