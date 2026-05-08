@@ -33,7 +33,7 @@ const ProductCard = ({ brand, model, price, image }) => (
     <div className="p-4 text-center">
       <p className="font-semibold text-gray-900 text-sm">{brand}</p>
       <p className="text-gray-500 text-xs uppercase tracking-wide mt-1">{model}</p>
-      <p className="font-bold text-[#004B2E] mt-2 text-sm">{price}</p>
+      <p className="font-bold text-[#0066cc] mt-2 text-sm">{price}</p>
     </div>
   </div>
 );

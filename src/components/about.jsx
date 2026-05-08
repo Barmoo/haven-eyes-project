@@ -21,9 +21,9 @@ const About = () => {
     <div className="min-h-screen bg-white">
 
       {/* Hero banner */}
-      <div className="bg-[#004B2E] text-white py-16 px-4 text-center">
+      <div className="bg-[#0066cc] text-white py-16 px-4 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-3">About Haven Eye</h1>
-        <p className="text-green-200 text-sm sm:text-base max-w-xl mx-auto">
+        <p className="text-blue-200 text-sm sm:text-base max-w-xl mx-auto">
           Leading eye diagnostic and imaging center in Accra
         </p>
       </div>
@@ -33,7 +33,7 @@ const About = () => {
         {/* Vision */}
         <section>
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-1 h-8 bg-[#004B2E] rounded-full"></div>
+            <div className="w-1 h-8 bg-[#0066cc] rounded-full"></div>
             <h2 className="text-2xl font-bold text-gray-900">Vision</h2>
           </div>
           <p className="text-gray-600 leading-relaxed">
@@ -44,7 +44,7 @@ const About = () => {
         {/* Mission */}
         <section>
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-1 h-8 bg-[#004B2E] rounded-full"></div>
+            <div className="w-1 h-8 bg-[#0066cc] rounded-full"></div>
             <h2 className="text-2xl font-bold text-gray-900">Mission</h2>
           </div>
           <p className="text-gray-600 leading-relaxed">
@@ -57,7 +57,7 @@ const About = () => {
         {/* Policy */}
         <section>
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-1 h-8 bg-[#004B2E] rounded-full"></div>
+            <div className="w-1 h-8 bg-[#0066cc] rounded-full"></div>
             <h2 className="text-2xl font-bold text-gray-900">Policy on Environmental Health and Safety</h2>
           </div>
           <p className="text-gray-600 leading-relaxed mb-6">
@@ -69,7 +69,7 @@ const About = () => {
           <ul className="space-y-2">
             {policies.map((policy, i) => (
               <li key={i} className="flex items-start gap-3 text-gray-600">
-                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#004B2E] shrink-0"></span>
+                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#0066cc] shrink-0\"></span>
                 {policy}
               </li>
             ))}
@@ -81,8 +81,8 @@ const About = () => {
         {/* Clientele */}
         <section>
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-1 h-8 bg-[#004B2E] rounded-full"></div>
-            <h2 className="text-2xl font-bold text-gray-900">Clientele</h2>
+            <div className="w-1 h-8 bg-[#0066cc] rounded-full"></div>
+            <h2 className="text-2xl font-bold text-gray-900\">Clientele</h2>
           </div>
           <p className="text-gray-600 leading-relaxed mb-6">
             Haven Eye Limited continues to provide services to customers in the following:
@@ -90,7 +90,7 @@ const About = () => {
           <ul className="space-y-2 mb-6">
             {clientele.map((client, i) => (
               <li key={i} className="flex items-start gap-3 text-gray-600">
-                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#004B2E] shrink-0"></span>
+                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#0066cc] shrink-0\"></span>
                 {client}
               </li>
             ))}

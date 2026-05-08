@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="w-full max-w-5xl text-center">
 
         {/* Heading */}
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#004B2E] font-bold leading-tight mb-8">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#0066cc] font-bold leading-tight mb-8">
           Book Your Appointments Today
         </h1>
 
@@ -24,7 +24,7 @@ const Hero = () => {
               setShowCalendar(!showCalendar);
               setShowMap(false);
             }}
-            className="w-full sm:w-auto bg-[#004B2E] text-white py-3 px-6 rounded-full font-semibold hover:bg-green-700 transition text-sm sm:text-base shadow-sm"
+            className="w-full sm:w-auto bg-[#0066cc] text-white py-3 px-6 rounded-full font-semibold hover:bg-blue-700 transition text-sm sm:text-base shadow-sm"
           >
             {showCalendar ? "Close Booking" : "Book an eye test"}
           </button>
@@ -34,7 +34,7 @@ const Hero = () => {
             href="https://calendly.com/haveneyeltd-info/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto bg-white border border-[#004B2E] text-[#004B2E] py-3 px-6 rounded-full font-semibold hover:bg-[#004B2E] hover:text-white transition text-sm sm:text-base shadow-sm"
+            className="w-full sm:w-auto bg-white border border-[#0066cc] text-[#0066cc] py-3 px-6 rounded-full font-semibold hover:bg-[#0066cc] hover:text-white transition text-sm sm:text-base shadow-sm"
           >
             Book an appointment
           </a>
@@ -45,7 +45,7 @@ const Hero = () => {
               setShowMap(!showMap);
               setShowCalendar(false);
             }}
-            className="w-full sm:w-auto bg-[#004B2E] text-white py-3 px-6 rounded-full font-semibold hover:bg-green-700 transition text-sm sm:text-base flex items-center justify-center gap-2 shadow-sm"
+            className="w-full sm:w-auto bg-[#0066cc] text-white py-3 px-6 rounded-full font-semibold hover:bg-blue-700 transition text-sm sm:text-base flex items-center justify-center gap-2 shadow-sm"
           >
             📍 {showMap ? "Hide Map" : "View Location"}
           </button>
@@ -58,7 +58,7 @@ const Hero = () => {
             <div className="w-full max-w-4xl bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
               
               {/* Header */}
-              <div className="bg-[#004B2E] text-white py-4 text-center font-semibold">
+              <div className="bg-[#0066cc] text-white py-4 text-center font-semibold">
                 Select a Date & Time (8AM – 5PM GMT)
               </div>
 

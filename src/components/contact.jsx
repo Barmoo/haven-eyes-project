@@ -53,21 +53,21 @@ const Contact = () => {
               <p>Adjacent the Bank of Ghana building</p>
               <p>
                 The Banks Square &mdash; Ridge, Accra{' '}
-                <span className="text-[#016C42] font-medium">GA-052-7763</span>
+                <span className="text-[#0084ff] font-medium">GA-052-7763</span>
               </p>
             </div>
 
             <div className="space-y-4 mb-9">
               <a
                 href="tel:0596915333"
-                className="flex items-center gap-3 text-[#016C42] hover:underline text-sm"
+                className="flex items-center gap-3 text-[#0084ff] hover:underline text-sm"
               >
                 <PhoneIcon />
                 <span>0596 915 333</span>
               </a>
               <a
                 href="mailto:info@haveneyeltd.com"
-                className="flex items-center gap-3 text-[#016C42] hover:underline text-sm"
+                className="flex items-center gap-3 text-[#0084ff] hover:underline text-sm"
               >
                 <EmailIcon />
                 <span>info@haveneyeltd.com</span>
@@ -76,7 +76,7 @@ const Contact = () => {
                 href="https://wa.me/233557767766"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-[#016C42] hover:underline text-sm"
+                className="flex items-center gap-3 text-[#0084ff] hover:underline text-sm"
               >
                 <WhatsAppIcon />
                 <span>+233 596 915 333</span>
@@ -88,13 +88,13 @@ const Contact = () => {
                 href="https://www.google.com/maps/dir/?api=1&destination=North+Ridge+Accra+Ghana"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#004B2E] text-white text-sm px-5 py-2.5 rounded hover:bg-[#016C42] transition"
+                className="bg-[#0066cc] text-white text-sm px-5 py-2.5 rounded hover:bg-[#0084ff] transition"
               >
                 Get directions
               </a>
               <a
                 href="tel:0596915333"
-                className="bg-[#004B2E] text-white text-sm px-5 py-2.5 rounded hover:bg-[#016C42] transition"
+                className="bg-[#0066cc] text-white text-sm px-5 py-2.5 rounded hover:bg-[#0084ff] transition"
               >
                 Call
               </a>
@@ -102,7 +102,7 @@ const Contact = () => {
                 href="https://calendly.com/haveneyeltd-info/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#004B2E] text-white text-sm px-5 py-2.5 rounded hover:bg-[#016C42] transition"
+                className="bg-[#0066cc] text-white text-sm px-5 py-2.5 rounded hover:bg-[#0084ff] transition"
               >
                 Book appointment
               </a>
@@ -129,7 +129,7 @@ const Contact = () => {
                 <p className="flex items-center gap-2">
                   <EmailIcon />
                   Email Address:{' '}
-                  <a href="mailto:info@haveneyeltd.com" className="text-[#016C42] hover:underline ml-1">
+                  <a href="mailto:info@haveneyeltd.com" className="text-[#0084ff] hover:underline ml-1">
                     info@haveneyeltd.com
                   </a>
                 </p>
@@ -140,7 +140,7 @@ const Contact = () => {
                     href="https://www.haven-eye.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#016C42] hover:underline ml-1"
+                    className="text-[#0084ff] hover:underline ml-1"
                   >
                     www.haven-eye.com
                   </a>

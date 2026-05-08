@@ -35,10 +35,10 @@ const Feature = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group flex flex-col items-center sm:items-start text-center sm:text-left gap-4 border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-green-200 transition-all duration-300"
+              className="group flex flex-col items-center sm:items-start text-center sm:text-left gap-4 border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-blue-200 transition-all duration-300"
             >
               {/* Icon */}
-              <div className="text-[#004B2E] group-hover:scale-110 transition-transform">
+              <div className="text-[#0066cc] group-hover:scale-110 transition-transform">
                 {feature.icon}
               </div>
 
@@ -53,7 +53,7 @@ const Feature = () => {
                   href={feature.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-2 inline-flex items-center gap-1 text-green-700 font-semibold hover:underline"
+                  className="mt-2 inline-flex items-center gap-1 text-blue-700 font-semibold hover:underline"
                 >
                   {feature.label} <span className="transition-transform group-hover:translate-x-1">›</span>
                 </a>
@@ -92,7 +92,7 @@ const Feature = () => {
               href="https://calendly.com/haveneyeltd-info/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-green-800 font-semibold underline flex items-center gap-1"
+              className="text-blue-800 font-semibold underline flex items-center gap-1"
             >
               Book OCT Scan <span>›</span>
             </a>
@@ -101,7 +101,7 @@ const Feature = () => {
               href="https://wa.me/233557767766?text=Hello%20I%20want%20to%20learn%20more%20about%20OCT"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-green-800 font-semibold underline flex items-center gap-1"
+              className="text-blue-800 font-semibold underline flex items-center gap-1"
             >
               Find out more <span>›</span>
             </a>

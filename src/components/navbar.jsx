@@ -36,7 +36,7 @@ const Navbar = () => {
           href="https://www.google.com/maps/search/?api=1&query=Haven+Eye+Clinic+near+Bank+of+Ghana"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden sm:inline-flex items-center gap-2 text-xs sm:text-sm text-gray-700 hover:text-[#004B2E] transition-colors"
+          className="hidden sm:inline-flex items-center gap-2 text-xs sm:text-sm text-gray-700 hover:text-[#0066cc] transition-colors"
           aria-label="Find Haven Eye Clinic near Bank of Ghana"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -68,15 +68,15 @@ const Navbar = () => {
                       className={({ isActive }) =>
                         `text-sm font-medium transition-colors duration-200 border-b-2 pb-1 ${
                           isActive
-                            ? 'text-[#004B2E] font-semibold border-[#004B2E]'
-                            : 'text-gray-700 hover:text-[#004B2E] border-transparent hover:border-[#004B2E]'
+                            ? 'text-[#0066cc] font-semibold border-[#0066cc]'
+                            : 'text-gray-700 hover:text-[#0066cc] border-transparent hover:border-[#0066cc]'
                         }`
                       }
                     >
                       {item.label}
                     </NavLink>
                   ) : (
-                    <a href={item.href} className="text-sm font-medium text-gray-700 hover:text-[#004B2E] border-b-2 border-transparent pb-1 hover:border-[#004B2E] transition-colors duration-200">
+                    <a href={item.href} className="text-sm font-medium text-gray-700 hover:text-[#0066cc] border-b-2 border-transparent pb-1 hover:border-[#0066cc] transition-colors duration-200">
                       {item.label}
                     </a>
                   )}
@@ -89,7 +89,7 @@ const Navbar = () => {
               href="https://calendly.com/haveneyeltd-info/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#004B2E] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#003d26] transition-colors duration-200 shadow-sm hover:shadow-md"
+              className="bg-[#0066cc] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#004399] transition-colors duration-200 shadow-sm hover:shadow-md"
             >
               Book Appointment
             </a>
@@ -110,8 +110,8 @@ const Navbar = () => {
                       className={({ isActive }) =>
                         `text-base font-medium block py-3 px-4 rounded-lg transition-all duration-200 ${
                           isActive
-                            ? 'text-[#004B2E] font-semibold bg-green-50 border-l-4 border-[#004B2E]'
-                            : 'text-gray-700 hover:text-[#004B2E] hover:bg-gray-50 border-l-4 border-transparent'
+                            ? 'text-[#0066cc] font-semibold bg-blue-50 border-l-4 border-[#0066cc]'
+                            : 'text-gray-700 hover:text-[#0066cc] hover:bg-gray-50 border-l-4 border-transparent'
                         }`
                       }
                       onClick={() => setMobileMenuOpen(false)}
@@ -121,7 +121,7 @@ const Navbar = () => {
                   ) : (
                     <a
                       href={item.href}
-                      className="text-base font-medium text-gray-700 hover:text-[#004B2E] block py-3 px-4 rounded-lg hover:bg-gray-50 transition-all duration-200 border-l-4 border-transparent"
+                      className="text-base font-medium text-gray-700 hover:text-[#0066cc] block py-3 px-4 rounded-lg hover:bg-gray-50 transition-all duration-200 border-l-4 border-transparent"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.label}
@@ -134,7 +134,7 @@ const Navbar = () => {
                   href="https://calendly.com/haveneyeltd-info/30min"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-[#004B2E] text-white px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#003d26] transition-colors duration-200 block text-center shadow-sm hover:shadow-md"
+                  className="w-full bg-[#0066cc] text-white px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#004399] transition-colors duration-200 block text-center shadow-sm hover:shadow-md"
                 >
                   Book Appointment
                 </a>
