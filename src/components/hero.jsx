@@ -29,16 +29,15 @@ const Hero = () => {
             {showCalendar ? "Close Booking" : "Book an eye test"}
           </button>
 
-          {/* Contact Lens (reuse same calendar or separate link) */}
-          <button
-            onClick={() => {
-              setShowCalendar(!showCalendar);
-              setShowMap(false);
-            }}
+          {/* Appointment booking button */}
+          <a
+            href="https://outlook.office.com/bookwithme/user/f7806ecbc4ff4aa88596f6f02fd37c56@haveneyeltd.com?anonymous&ismsaljsauthenabled&ep=plink"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto bg-white border border-[#004B2E] text-[#004B2E] py-3 px-6 rounded-full font-semibold hover:bg-[#004B2E] hover:text-white transition text-sm sm:text-base shadow-sm"
           >
             Book an appointment
-          </button>
+          </a>
 
           {/* Location Button */}
           <button
@@ -65,7 +64,7 @@ const Hero = () => {
 
               {/* Calendly Embed */}
               <InlineWidget
-                url="https://calendly.com/haveneyeltd/eye-test"
+                url="https://calendly.com/haveneyeltd/eye-test-new"
                 styles={{ height: "650px" }}
               />
             </div>

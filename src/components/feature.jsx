@@ -89,7 +89,7 @@ const Feature = () => {
 
           <div className="flex flex-col sm:flex-row gap-6">
             <a
-              href="https://wa.me/233557767766?text=Hello%20I%20want%20to%20book%20an%20OCT%20scan"
+              href="https://outlook.office.com/bookwithme/user/f7806ecbc4ff4aa88596f6f02fd37c56@haveneyeltd.com?anonymous&ismsaljsauthenabled&ep=plink"
               target="_blank"
               rel="noopener noreferrer"
               className="text-green-800 font-semibold underline flex items-center gap-1"

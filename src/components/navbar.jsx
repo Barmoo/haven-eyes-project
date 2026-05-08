@@ -86,7 +86,7 @@ const Navbar = () => {
 
             {/* CTA Button */}
             <a
-              href="https://wa.me/233557767766?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
+              href="https://outlook.office.com/bookwithme/user/f7806ecbc4ff4aa88596f6f02fd37c56@haveneyeltd.com?anonymous&ismsaljsauthenabled&ep=plink"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#004B2E] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#003d26] transition-colors duration-200 shadow-sm hover:shadow-md"
@@ -131,7 +131,7 @@ const Navbar = () => {
               ))}
               <li className="pt-6 border-t border-gray-200 mt-4">
                 <a
-                  href="https://wa.me/233557767766?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
+                  href="https://outlook.office.com/bookwithme/user/f7806ecbc4ff4aa88596f6f02fd37c56@haveneyeltd.com?anonymous&ismsaljsauthenabled&ep=plink"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-[#004B2E] text-white px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#003d26] transition-colors duration-200 block text-center shadow-sm hover:shadow-md"

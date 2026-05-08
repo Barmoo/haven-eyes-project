@@ -99,7 +99,7 @@ const Contact = () => {
                 Call
               </a>
               <a
-                href="https://wa.me/233557767766?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
+                href="https://outlook.office.com/bookwithme/user/f7806ecbc4ff4aa88596f6f02fd37c56@haveneyeltd.com?anonymous&ismsaljsauthenabled&ep=plink"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#004B2E] text-white text-sm px-5 py-2.5 rounded hover:bg-[#016C42] transition"
