@@ -86,7 +86,7 @@ const Navbar = () => {
 
             {/* CTA Button */}
             <a
-              href="https://calendly.com/haveneyeltd-info/30min"
+              href="https://haveneye.simplybook.me/v2/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#0066cc] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#004399] transition-colors duration-200 shadow-sm hover:shadow-md"
@@ -131,7 +131,7 @@ const Navbar = () => {
               ))}
               <li className="pt-6 border-t border-gray-200 mt-4">
                 <a
-                  href="https://calendly.com/haveneyeltd-info/30min"
+                  href="https://haveneye.simplybook.me/v2/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-[#0066cc] text-white px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#004399] transition-colors duration-200 block text-center shadow-sm hover:shadow-md"

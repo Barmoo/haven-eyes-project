@@ -89,7 +89,7 @@ const Feature = () => {
 
           <div className="flex flex-col sm:flex-row gap-6">
             <a
-              href="https://calendly.com/haveneyeltd-info/30min"
+              href="https://haveneye.simplybook.me/v2/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-800 font-semibold underline flex items-center gap-1"

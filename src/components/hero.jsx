@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { InlineWidget } from "react-calendly";
 
 const Hero = () => {
   const [showMap, setShowMap] = useState(false);
-  const [showCalendar, setShowCalendar] = useState(false);
 
   return (
     <section className="bg-gray-50 px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-20 flex justify-center">
@@ -18,20 +16,19 @@ const Hero = () => {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-4 sm:gap-5">
 
-          {/* Book Eye Test (Calendar toggle) */}
-          <button
-            onClick={() => {
-              setShowCalendar(!showCalendar);
-              setShowMap(false);
-            }}
+          {/* Book Eye Test - Direct Link */}
+          <a
+            href="https://haveneye.simplybook.me/v2/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto bg-[#0066cc] text-white py-3 px-6 rounded-full font-semibold hover:bg-blue-700 transition text-sm sm:text-base shadow-sm"
           >
-            {showCalendar ? "Close Booking" : "Book an eye test"}
-          </button>
+            Book an eye test
+          </a>
 
           {/* Appointment booking button */}
           <a
-            href="https://calendly.com/haveneyeltd-info/30min"
+            href="https://haveneye.simplybook.me/v2/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto bg-white border border-[#0066cc] text-[#0066cc] py-3 px-6 rounded-full font-semibold hover:bg-[#0066cc] hover:text-white transition text-sm sm:text-base shadow-sm"
@@ -43,7 +40,6 @@ const Hero = () => {
           <button
             onClick={() => {
               setShowMap(!showMap);
-              setShowCalendar(false);
             }}
             className="w-full sm:w-auto bg-[#0066cc] text-white py-3 px-6 rounded-full font-semibold hover:bg-blue-700 transition text-sm sm:text-base flex items-center justify-center gap-2 shadow-sm"
           >
@@ -52,24 +48,7 @@ const Hero = () => {
 
         </div>
 
-        {/* Calendar Section */}
-        {showCalendar && (
-          <div className="mt-10 w-full flex justify-center">
-            <div className="w-full max-w-4xl bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
-              
-              {/* Header */}
-              <div className="bg-[#0066cc] text-white py-4 text-center font-semibold">
-                Select a Date & Time (8AM – 5PM GMT)
-              </div>
-
-              {/* Calendly Embed */}
-              <InlineWidget
-                url="https://calendly.com/haveneyeltd-info/30min"
-                styles={{ height: "650px" }}
-              />
-            </div>
-          </div>
-        )}
+        {/* Calendar Section - Removed as InlineWidget is Calendly-specific */}
 
         {/* Map Section */}
         {showMap && (

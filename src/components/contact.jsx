@@ -99,7 +99,7 @@ const Contact = () => {
                 Call
               </a>
               <a
-                href="https://calendly.com/haveneyeltd-info/30min"
+                href="https://haveneye.simplybook.me/v2/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#0066cc] text-white text-sm px-5 py-2.5 rounded hover:bg-[#0084ff] transition"
