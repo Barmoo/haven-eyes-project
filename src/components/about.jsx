@@ -2,18 +2,18 @@ import React from "react";
 
 const policies = [
   "Child Labour Policy",
-  "Code of Conduct & Grievance Policy",
-  "Gift & Hospitality Policy",
-  "Human Right Policy",
-  "Abuse Discrimination & Abuse Policy",
+  "Code of Conduct and Grievance Policy",
+  "Gifts and Hospitality Policy",
+  "Human Rights Policy",
+  "Anti-Abuse and Anti-Discrimination Policy",
 ];
 
 const clientele = [
   "Banks",
   "Schools",
-  "Churches",
-  "Adults",
-  "Elderly",
+  "Religious Institutions",
+  "Individual Clients",
+  "Older Adults",
 ];
 
 const About = () => {
@@ -22,7 +22,7 @@ const About = () => {
 
       {/* Hero banner */}
       <div className="bg-[#0066cc] text-white py-16 px-4 text-center">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-3">About Haven Eye</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-3">About Haven Eye Ltd</h1>
         <p className="text-blue-200 text-sm sm:text-base max-w-xl mx-auto">
           Leading eye diagnostic and imaging center in Accra
         </p>
@@ -61,10 +61,10 @@ const About = () => {
             <h2 className="text-2xl font-bold text-gray-900">Policy on Environmental Health and Safety</h2>
           </div>
           <p className="text-gray-600 leading-relaxed mb-6">
-            Haven Eye Limited takes seriously its responsibilities to conserve and protect the environment. Compliance with environment safety and social legislation forms an integral part of our operations for employees at all levels of our organization. We also collaborate closely with our customers to ensure that proper services are provided to our clients in compliance with environmental, health and safety requirements at all times.
+            Haven Eye Limited is committed to the protection of the environment and the maintenance of high standards of health and safety. Compliance with all applicable environmental, health, and safety laws and regulations is an integral part of our operations at every level of the organization. We also collaborate closely with our customers to ensure that our services consistently satisfy all relevant environmental, health, and safety requirements.
           </p>
           <p className="text-gray-700 font-medium mb-3">
-            Haven Eye Limited's other comprehensive policy statements are listed below:
+            Haven Eye Limited's other policy statements are listed below:
           </p>
           <ul className="space-y-2">
             {policies.map((policy, i) => (
@@ -85,7 +85,7 @@ const About = () => {
             <h2 className="text-2xl font-bold text-gray-900\">Clientele</h2>
           </div>
           <p className="text-gray-600 leading-relaxed mb-6">
-            Haven Eye Limited continues to provide services to customers in the following:
+            Haven Eye Limited provides services to the following client groups and institutions:
           </p>
           <ul className="space-y-2 mb-6">
             {clientele.map((client, i) => (
@@ -96,10 +96,10 @@ const About = () => {
             ))}
           </ul>
           <p className="text-gray-500 text-sm italic mb-6">
-            Note: the above is not exhaustive. Haven Eye Limited provides eye care services upon request from cherished customers in other small industries.
+            Note: This list is not exhaustive. Haven Eye Limited also provides eye care services, upon request, to additional clients and sectors.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            Haven Eye Clinic has qualified eye care professionals and strong partnerships with reputable suppliers, both local and international, to provide high-quality eye care equipment, medicines, and services. All our products and services comply with environmental, health, and safety standards, ensuring safe and effective eye care while providing patients with long-term value and reliable treatment outcomes.
+            Haven Eye Limited has qualified eye care professionals and maintains strong partnerships with reputable local and international suppliers to deliver high-quality eye care equipment, medicines, and services. All our products and services comply with environmental, health, and safety standards, ensuring safe and effective eye care while delivering long-term value and reliable treatment outcomes for patients.
           </p>
         </section>
 

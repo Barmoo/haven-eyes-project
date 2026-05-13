@@ -46,7 +46,7 @@ const Navbar = () => {
         </a>
 
         {/* Center: logo */}
-        <img src="/images/logo/haven-logo.jpeg" alt="Haven Eye Logo" className="h-8 sm:h-10 lg:h-12" />
+        <img src="/images/logo/haven-logo.jpeg" alt="Haven Eye Ltd Logo" className="h-8 sm:h-10 lg:h-12" />
 
         {/* Right: actions */}
         <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">

@@ -3,22 +3,22 @@ import React from 'react';
 const services = [
     {
         title: "Optical Coherence Tomography (OCT)",
-        description: "An advanced, non-invasive imaging test that uses light waves to take cross-section pictures of your retina. This helps detect and manage glaucoma, diabetic eye disease, and other retinal conditions much earlier than traditional methods.",
-        details: "OCT provides detailed images of the retina's layers, allowing us to detect subtle changes that might indicate early disease. It's painless, takes only minutes, and is essential for monitoring eye health.",
+        description: "Optical Coherence Tomography (OCT) is an advanced, non-invasive imaging test that uses light waves to capture cross-sectional pictures of the retina. This examination enables early detection and management of glaucoma, diabetic eye disease, and other ocular conditions compared to standard methods.",
+        details: "OCT provides high-resolution images of the retina's layers, enabling detection of subtle changes that may indicate early disease. The procedure is painless, takes only minutes, and is essential for ongoing eye health monitoring.",
         image: "/images/help/Optical-Coherence .png",
         icon: "🔬",
     },
     {
         title: "Eye Test at Home",
-        description: "Comprehensive eye examinations conducted in the comfort of your home for those who cannot visit our stores unaccompanied. Our mobile opticians bring professional equipment and expertise directly to you.",
-        details: "Our home eye test service includes visual acuity testing, refraction, eye pressure measurement, and retinal examination. Perfect for elderly patients, those with mobility issues, or busy professionals.",
+        description: "Comprehensive eye examinations are available in the comfort of your home for those who are unable, for medical or mobility reasons, to visit our stores independently. Our mobile opticians bring all necessary equipment and expertise directly to you.",
+        details: "Our home eye test service is available to older adults, individuals with mobility challenges, and busy professionals within our designated service area.",
         image: "/images/help/Home-eye.png",
         icon: "🏠",
     },
     {
         title: "Corporate and Insurance Eye Care",
-        description: "Specialized eye care services designed for corporate clients and insurance-covered examinations. We work with major insurance providers to ensure comprehensive coverage for your eye health needs.",
-        details: "Includes routine eye examinations, specialized testing, and coordination with your insurance provider. We handle all paperwork and ensure you get the maximum coverage for your eye care benefits.",
+        description: "We provide specialised eye care services for corporate clients and individuals whose eye examinations are covered by insurance. We also work with major insurance providers to help ensure appropriate coverage for vision care needs.",
+        details: "Our offerings include routine eye examinations, specialized testing, and coordination with your insurance provider. We manage all paperwork to help you maximize your available eye care benefits.",
         image: "/images/frames/Specsavers.png",
         icon: "🏢",
     },
@@ -39,7 +39,7 @@ const services = [
     {
         title: "Visual Field Test",
         description: "A test that measures your entire scope of vision, including peripheral vision. Essential for detecting glaucoma, neurological conditions, and other vision-threatening diseases.",
-        details: "This automated test maps your visual field while you look at a central point. It helps detect blind spots or areas of reduced vision that might indicate serious conditions like glaucoma or brain tumors.",
+        details: "This automated test maps your visual field while you look at a central point. It helps detect blind spots or areas of reduced vision that may indicate serious conditions such as glaucoma or brain tumors.",
         image: "/images/frames/Kylie Minogue.png",
         icon: "🎯",
     },
@@ -51,15 +51,15 @@ const services = [
         icon: "⚕️",
     },
     {
-        title: "Corporate and Insurance Eyecare Programmes",
-        description: "Comprehensive eye care packages designed for businesses and organizations, including group insurance coverage and workplace eye health initiatives.",
-        details: "We provide bulk eye examinations, vision screening programs, and coordinate with corporate health insurance providers. Includes employee wellness programs focused on eye health and safety.",
+        title: "Corporate and Insurance Eyecare Programs",
+        description: "Comprehensive eye care programmes designed for businesses and organisations, including group insurance coverage and workplace eye health initiatives.",
+        details: "We provide bulk eye examinations, vision screening programmes, and coordination with corporate health insurance providers. These services also include employee wellness initiatives focused on eye health and safety.",
         image: "/images/frames/Specsavers2.png",
         icon: "👥",
     },
     {
         title: "Pachymetry",
-        description: "Measurement of corneal thickness, crucial for glaucoma management, contact lens fitting, and pre-operative assessment for refractive surgery.",
+        description: "Measurement of corneal thickness is crucial for glaucoma management, contact lens fitting, and pre-operative assessment for refractive surgery.",
         details: "This quick, painless test measures the thickness of your cornea using ultrasound or optical methods. Corneal thickness is important for accurate glaucoma diagnosis and monitoring treatment effectiveness.",
         image: "/images/frames/Specsavers3.png",
         icon: "📊",
@@ -113,11 +113,9 @@ const Service = () => {
                                     <p className="text-gray-600 text-sm leading-relaxed mb-4">
                                         {service.description}
                                     </p>
-                                    <div className="border-t border-gray-100 pt-4">
-                                        <p className="text-gray-700 text-sm leading-relaxed">
-                                            {service.details}
-                                        </p>
-                                    </div>
+                                    <p className="text-gray-700 text-sm leading-relaxed">
+                                        {service.details}
+                                    </p>
                                 </div>
                             </div>
                         ))}

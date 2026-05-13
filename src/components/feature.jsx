@@ -28,7 +28,7 @@ const Feature = () => {
       {/* Section 1 */}
       <div id="eye-tests" className="px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-10">
-          Why choose Haven Eye?
+          Why choose Haven Eye Ltd?
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -45,7 +45,7 @@ const Contact = () => {
               Visit Us
             </p>
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-7">
-              Haven Eye &mdash; Ridge, Accra
+              Haven Eye Ltd &mdash; Ridge, Accra
             </h1>
 
             <div className="space-y-1.5 text-gray-600 mb-7 leading-relaxed">
@@ -59,11 +59,11 @@ const Contact = () => {
 
             <div className="space-y-4 mb-9">
               <a
-                href="tel:0596915333"
+                href="tel:0557767766"
                 className="flex items-center gap-3 text-[#0084ff] hover:underline text-sm"
               >
                 <PhoneIcon />
-                <span>0596 915 333</span>
+                <span>0557 767 766</span>
               </a>
               <a
                 href="mailto:info@haveneyeltd.com"
@@ -79,7 +79,7 @@ const Contact = () => {
                 className="flex items-center gap-3 text-[#0084ff] hover:underline text-sm"
               >
                 <WhatsAppIcon />
-                <span>+233 596 915 333</span>
+                <span>0557 767 766</span>
               </a>
             </div>
 
@@ -93,7 +93,7 @@ const Contact = () => {
                 Get directions
               </a>
               <a
-                href="tel:0596915333"
+                href="tel:0557767766"
                 className="bg-[#0066cc] text-white text-sm px-5 py-2.5 rounded hover:bg-[#0084ff] transition"
               >
                 Call
@@ -115,15 +115,13 @@ const Contact = () => {
                 <p>
                   Managing Director:{' '}
                   <strong>
-                    <a href="tel:+233262444555" className="hover:underline">(233) 26 244 4555</a>
-                    ,{' '}
-                    <a href="tel:+233596915333" className="hover:underline">(233) 59 691 5333</a>
+                    <a href="tel:0557767766" className="hover:underline">0557 767 766</a>
                   </strong>
                 </p>
                 <p>
                   Main office:{' '}
                   <strong>
-                    <a href="tel:+233557767766" className="hover:underline">(+233) 55 776 7766</a>
+                    <a href="tel:0557767766" className="hover:underline">0557 767 766</a>
                   </strong>
                 </p>
                 <p className="flex items-center gap-2">
@@ -207,7 +205,7 @@ const Contact = () => {
           {/* Right column: Map */}
           <div className="w-full h-100 lg:h-full lg:min-h-130 rounded-lg overflow-hidden shadow-md">
             <iframe
-              title="Haven Eye location map"
+              title="Haven Eye Ltd location map"
               src="https://maps.google.com/maps?q=North+Ridge+Accra+Ghana&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"

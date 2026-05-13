@@ -11,10 +11,10 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="flex items-center mb-4">
-                <img src="/images/logo/haven-logo.jpeg" alt="Haven Eye Logo" className="h-10 w-auto mr-3" />
+                <img src="/images/logo/haven-logo.jpeg" alt="Haven Eye Ltd Logo" className="h-10 w-auto mr-3 filter drop-shadow-md" style={{imageRendering: 'crisp-edges'}} />
                 <div>
-                  <h3 className="text-xl font-bold">Haven Eye</h3>
-                  <p className="text-sm text-white/80">Your Vision, Our Mission</p>
+                  <h3 className="text-xl font-bold">Haven Eye Ltd</h3>
+                  <p className="text-sm text-white/80">Where your vision finds comfort</p>
                 </div>
               </div>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
@@ -100,8 +100,8 @@ const Footer = () => {
                   <svg className="w-4 h-4 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                   </svg>
-                  <a href="tel:+233596915333" className="text-white/80 hover:text-white transition-colors">
-                    +233 596 915 333
+                  <a href="tel:0557767766" className="text-white/80 hover:text-white transition-colors">
+                    0557 767 766
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -123,7 +123,7 @@ const Footer = () => {
         <div className="px-4 sm:px-6 lg:px-8 py-6">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm">
             <div className="text-white/70 mb-4 md:mb-0">
-              © {new Date().getFullYear()} Haven Eye. All rights reserved.
+              © {new Date().getFullYear()} Haven Eye Ltd. All rights reserved.
             </div>
             <div className="flex flex-wrap gap-4 text-white/70 justify-center md:justify-end">
               <a href="#!" className="hover:text-white transition-colors">Privacy Policy</a>

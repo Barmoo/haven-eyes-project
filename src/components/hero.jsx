@@ -55,7 +55,7 @@ const Hero = () => {
           <div className="mt-10 w-full flex justify-center">
             <div className="w-full max-w-3xl h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-xl border border-gray-200">
               <iframe
-                title="Haven Eye location map"
+                title="Haven Eye Ltd location map"
                 src="https://maps.google.com/maps?q=No.+22+Ambassadorial+Enclave+Adjacent+Bank+of+Ghana+Building+Accra&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
