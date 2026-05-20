@@ -2,71 +2,59 @@ import React from 'react';
 
 const Offer = () => {
     return (
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-full bg-[#f5f1e8]">
 
             {/* Header */}
-            <div className="flex flex-col items-center text-center px-4 sm:px-6 py-6 sm:py-10 mb-4 lg:mb-6">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Top offers</h2>
-                <p className="text-gray-600 text-sm sm:text-base max-w-xl">
-                    From glasses to hearing aids, here are some top offers from the world of Specsavers.
+            <div className="flex flex-col items-center text-center px-4 sm:px-6 py-10 sm:py-16 mb-4 lg:mb-8">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-gray-900 mb-4 sm:mb-6">
+                    Our Premium 2-for-1 Offer
+                </h2>
+                <p className="text-gray-700 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                    Get two pairs of premium glasses for the price of one. Mix and match styles, pick work frames and casual sunglasses, or choose any combination you prefer.
                 </p>
             </div>
 
             {/* Offer 1 - 2 for 1 (text left, image right) */}
-            <div className="flex flex-col lg:flex-row w-full min-h-auto lg:min-h-125">
+            <div className="flex flex-col lg:flex-row w-full min-h-auto lg:min-h-96">
 
                 {/* Left - Text */}
-                <div className="flex flex-col justify-center w-full lg:w-1/2 px-4 sm:px-8 lg:px-16 py-6 sm:py-12 lg:py-16">
-                    <span className="text-xs sm:text-sm font-semibold text-gray-500 uppercase tracking-widest mb-2 sm:mb-3">
-                        Offer
+                <div className="flex flex-col justify-center w-full lg:w-1/2 px-4 sm:px-8 lg:px-16 py-10 sm:py-16 lg:py-20">
+                    <span className="text-xs sm:text-sm font-semibold text-[#3d6b1f] uppercase tracking-widest mb-3 sm:mb-4">
+                        Exclusive Offer
                     </span>
-                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
-                        Our great 2 for 1 offers
+                    <h3 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
+                        Two Pairs, One Price
                     </h3>
-                    <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-6 sm:mb-8">
-                        With 2 for 1 you can mix styles, switch looks and choose sunnies, safety specs or even contacts as one of your two. A pair for work, a pair for play. One for nightlife, one for the everyday. Why stop at one?
+                    <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
+                        Why settle for one pair of glasses? Mix and match from our premium collection. Get a pair for work, one for everyday wear, prescription sunglasses, or any combination you love. Every second pair is completely free.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
-                        <a href="/services" className="text-blue-800 font-semibold underline flex items-center gap-1">
-                            Check out 2 for 1 <span>›</span>
+                    <ul className="space-y-3 mb-8 text-gray-700">
+                        <li className="flex items-start gap-3">
+                            <span className="text-lg font-bold text-[#3d6b1f]">✓</span>
+                            <span>Free choice on the second pair</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="text-lg font-bold text-[#3d6b1f]">✓</span>
+                            <span>Premium designer frames included</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="text-lg font-bold text-[#3d6b1f]">✓</span>
+                            <span>Full eye test and fitting included</span>
+                        </li>
+                    </ul>
+                    <div className="flex flex-col sm:flex-row gap-4">
+                        <a href="/glasses" className="bg-[#3d6b1f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#2d5016] transition-colors text-center">
+                            Browse Frames
                         </a>
-                        <a href="/glasses" className="text-blue-800 font-semibold underline flex items-center gap-1">
-                            View glasses <span>›</span>
+                        <a href="https://haveneye.simplybook.me/v2/" target="_blank" rel="noopener noreferrer" className="border-2 border-[#3d6b1f] text-[#3d6b1f] font-semibold py-3 px-8 rounded-full hover:bg-[#3d6b1f] hover:text-white transition-colors text-center">
+                            Claim Offer
                         </a>
                     </div>
                 </div>
 
                 {/* Right - Image */}
-                <div className="w-full lg:w-1/2 min-h-64 sm:min-h-80 lg:min-h-125 flex justify-center items-center px-4 sm:pr-6 lg:pr-6 mt-4 lg:mt-0">
-                    <img src="/images/offers/offe.png" alt="2 for 1 offers" className="w-full max-w-sm sm:max-w-none h-full object-cover rounded-lg" />
-                </div>
-
-            </div>
-
-            {/* Offer 2 - Hearing aid promise (image left, text right) */}
-            <div className="flex flex-col lg:flex-row-reverse w-full min-h-auto lg:min-h-125 mt-8 sm:mt-12 lg:mt-16">
-
-                {/* Left - Image */}
-                <div className="w-full lg:w-1/2 min-h-64 sm:min-h-80 lg:min-h-125 flex justify-center items-center px-4 sm:pl-6 lg:pl-6 mb-4 lg:mb-0">
-                    <img src="/images/Hearing aid promise/HAP.png" alt="Hearing aid promise" className="w-full max-w-sm sm:max-w-none h-full object-cover rounded-lg" />
-                </div>
-
-                {/* Right - Text */}
-                <div className="flex flex-col justify-center w-full lg:w-1/2 px-4 sm:px-8 lg:px-16 py-6 sm:py-12 lg:py-16">
-                    <span className="text-xs sm:text-sm font-semibold text-gray-500 uppercase tracking-widest mb-2 sm:mb-3">
-                        Hearing Aids
-                    </span>
-                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
-                        Hearing aid promise
-                    </h3>
-                    <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-6 sm:mb-8">
-                        Found cheaper comparable hearing on the high street? We'll double the difference
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
-                        <a href="/services" className="text-blue-800 font-semibold underline flex items-center gap-1">
-                            Browse <span>›</span>
-                        </a>
-                    </div>
+                <div className="w-full lg:w-1/2 min-h-64 sm:min-h-80 lg:min-h-96 flex justify-center items-center px-4 sm:pr-6 lg:pr-6 mt-8 lg:mt-0">
+                    <img src="/images/offers/offe.png" alt="2 for 1 offers" className="w-full max-w-sm sm:max-w-none h-full object-cover rounded-lg shadow-lg" />
                 </div>
 
             </div>

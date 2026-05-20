@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0066cc] text-white">
+    <footer className="bg-[#2d5016] text-white">
       {/* Main Footer Content */}
       <div className="px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-7xl mx-auto">
@@ -62,28 +62,28 @@ const Footer = () => {
 
             {/* Services */}
             <div>
-              <h4 className="text-lg font-semibold mb-4">Our Services</h4>
+              <h4 className="text-lg font-semibold mb-4">Eye Care Services</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="/services" className="text-white/80 hover:text-white transition-colors">Optical Coherence Tomography</a></li>
-                <li><a href="/services" className="text-white/80 hover:text-white transition-colors">Comprehensive Eye Exams</a></li>
-                <li><a href="/services" className="text-white/80 hover:text-white transition-colors">Contact Lens Services</a></li>
-                <li><a href="/services" className="text-white/80 hover:text-white transition-colors">Glaucoma Management</a></li>
+                <li><a href="/services" className="text-white/80 hover:text-white transition-colors">OCT Scanning</a></li>
+                <li><a href="/services" className="text-white/80 hover:text-white transition-colors">Eye Exams</a></li>
+                <li><a href="/services" className="text-white/80 hover:text-white transition-colors">Contact Lens Fitting</a></li>
+                <li><a href="/services" className="text-white/80 hover:text-white transition-colors">Home Eye Tests</a></li>
               </ul>
             </div>
 
-            {/* Products */}
+            {/* Products & Other */}
             <div>
-              <h4 className="text-lg font-semibold mb-4">Products</h4>
+              <h4 className="text-lg font-semibold mb-4">Products & More</h4>
               <ul className="space-y-2 text-sm">
                 <li><a href="/glasses" className="text-white/80 hover:text-white transition-colors">Designer Frames</a></li>
-                <li><a href="#contact-lenses" className="text-white/80 hover:text-white transition-colors">Contact Lenses</a></li>
-                <li><a href="/glasses" className="text-white/80 hover:text-white transition-colors">Prescription Sunglasses</a></li>
-                <li><a href="/services" className="text-white/80 hover:text-white transition-colors">Eye Care Products</a></li>
+                <li><a href="/" className="text-white/80 hover:text-white transition-colors">Contact Lenses</a></li>
+                <li><a href="/hearing-aids" className="text-white/80 hover:text-white transition-colors">Hearing Aids</a></li>
+                <li><a href="/" className="text-white/80 hover:text-white transition-colors">2-for-1 Offer</a></li>
               </ul>
             </div>
 
             {/* Contact Info */}
-            <div>
+            <div id="contact-info">
               <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
               <div className="space-y-3 text-sm">
                 <div className="flex items-start space-x-3">

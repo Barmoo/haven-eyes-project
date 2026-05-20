@@ -19,21 +19,21 @@ const bestLovedLensesProducts = [
   { brand: "Specsavers easyvision", model: "Vitrea", price: "GH₵ 230", image: "/images/best-loved-lenses/easyvision Vitrea.png" },
 ];
 
-/* ---------------- CARD ---------------- */
+/* ---------------- CARD - Updated Design */
 const ProductCard = ({ brand, model, price, image }) => (
-  <div className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300">
-    <div className="h-48 flex items-center justify-center bg-gray-50 p-4">
+  <div className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300 hover:border-[#3d6b1f]">
+    <div className="h-56 flex items-center justify-center bg-[#f5f1e8] p-6 overflow-hidden">
       <img
         src={image}
         alt={brand}
-        className="max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+        className="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-300"
       />
     </div>
 
-    <div className="p-4 text-center">
+    <div className="p-5 text-center border-t border-gray-100">
       <p className="font-semibold text-gray-900 text-sm">{brand}</p>
-      <p className="text-gray-500 text-xs uppercase tracking-wide mt-1">{model}</p>
-      <p className="font-bold text-[#0066cc] mt-2 text-sm">{price}</p>
+      <p className="text-gray-500 text-xs uppercase tracking-wide mt-1 mb-3">{model}</p>
+      <p className="font-bold text-[#3d6b1f] text-lg">{price}</p>
     </div>
   </div>
 );
@@ -46,29 +46,55 @@ const Product = () => {
   return (
     <div className="flex flex-col w-full">
 
-      {/* -------- Section 1 -------- */}
-      <div className="px-4 sm:px-6 lg:px-8 py-10">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-3">
-          Our freshest frames
-        </h2>
+      {/* -------- Section 1: Frames -------- */}
+      <div className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-gray-900 mb-3">
+              Our Freshest Frames
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Premium designer eyewear handpicked for quality and style
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {glassesProducts.slice(activeSlide, activeSlide + 4).map((p, i) => (
-            <ProductCard key={i} {...p} />
-          ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {glassesProducts.slice(activeSlide, activeSlide + 4).map((p, i) => (
+              <ProductCard key={i} {...p} />
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <a href="/glasses" className="inline-block bg-[#3d6b1f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#2d5016] transition-colors">
+              View All Frames
+            </a>
+          </div>
         </div>
       </div>
 
-      {/* -------- Section 2 (TARGET) -------- */}
-      <div id="contact-lenses" className="px-4 sm:px-6 lg:px-8 py-10">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-3">
-          Our best-loved contact lenses
-        </h2>
+      {/* -------- Section 2: Contact Lenses -------- */}
+      <div id="contact-lenses" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-[#f5f1e8]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-gray-900 mb-3">
+              Our Best-Loved Contact Lenses
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Premium comfort and vision correction in one
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {bestLovedLensesProducts.slice(activeLensSlide, activeLensSlide + 4).map((p, i) => (
-            <ProductCard key={i} {...p} />
-          ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {bestLovedLensesProducts.slice(activeLensSlide, activeLensSlide + 4).map((p, i) => (
+              <ProductCard key={i} {...p} />
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <a href="https://haveneye.simplybook.me/v2/" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#3d6b1f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#2d5016] transition-colors">
+              Get Fitted for Contact Lenses
+            </a>
+          </div>
         </div>
       </div>
 
