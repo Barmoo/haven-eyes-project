@@ -27,7 +27,7 @@ const FAQ = () => {
     },
     {
       question: 'Do you offer home eye tests?',
-      answer: 'Yes! We provide in-home eye tests for seniors, mobility-challenged individuals, and those with medical constraints. Contact us to schedule.',
+      answer: 'No! We hope to offer this in the future, but for now, all eye exams and OCT scans must be done in-clinic to ensure accuracy and comprehensive care. We look forward to welcoming you to our state-of-the-art facility!',
     },
   ];
 
