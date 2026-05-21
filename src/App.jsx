@@ -17,7 +17,6 @@ import Service from './components/service';
 import Contact from './components/contact';
 import About from './components/about';
 import Glasses from './components/glasses';
-import HearingAids from './components/hearing-aids';
 
 
 const HomePage = () => (
@@ -45,7 +44,6 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/glasses" element={<Glasses />} />
         <Route path="/services" element={<Service />} />
-        <Route path="/hearing-aids" element={<HearingAids />} />
       </Routes>
       <Footer />
       <StickyCtaButton />

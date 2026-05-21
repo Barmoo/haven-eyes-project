@@ -2,6 +2,7 @@ import React from 'react';
 
 const services = [
     {
+        id: "oct-scanning",
         title: "Optical Coherence Tomography (OCT)",
         description: "Optical Coherence Tomography (OCT) is an advanced, non-invasive imaging test that uses light waves to capture cross-sectional pictures of the retina. This examination enables early detection and management of glaucoma, diabetic eye disease, and other ocular conditions compared to standard methods.",
         details: "OCT provides high-resolution images of the retina's layers, enabling detection of subtle changes that may indicate early disease. The procedure is painless, takes only minutes, and is essential for ongoing eye health monitoring.",
@@ -9,11 +10,12 @@ const services = [
         icon: "🔬",
     },
     {
-        title: "Eye Test at Home",
-        description: "Comprehensive eye examinations are available in the comfort of your home for those who are unable, for medical or mobility reasons, to visit our stores independently. Our mobile opticians bring all necessary equipment and expertise directly to you.",
-        details: "Our home eye test service is available to older adults, individuals with mobility challenges, and busy professionals within our designated service area.",
-        image: "/images/help/Home-eye.png",
-        icon: "🏠",
+        id: "contact-lens-fitting",
+        title: "Contact Lens Fitting",
+        description: "Our expert fitting service ensures your contact lenses are comfortable, safe, and provide optimal vision correction for your lifestyle.",
+        details: "We perform precise measurements, fit trials, and follow-up checks to help you find the best lens type for everyday wear, sports, or special prescriptions.",
+        image: "/images/help/Optical-Coherence .png",
+        icon: "👓",
     },
     {
         title: "Corporate and Insurance Eye Care",
@@ -23,6 +25,7 @@ const services = [
         icon: "🏢",
     },
     {
+        id: "eye-exams",
         title: "Comprehensive Eye Examination",
         description: "A thorough evaluation of your visual system and eye health, including tests for vision, eye coordination, and detection of eye diseases. This is the foundation of good eye care.",
         details: "Includes visual acuity testing, refraction, eye muscle function testing, pupil response, and examination of the external and internal eye structures. Essential for maintaining optimal vision and detecting potential problems early.",
@@ -90,6 +93,7 @@ const Service = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map((service, index) => (
                             <div
+                                id={service.id}
                                 key={index}
                                 className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
                             >

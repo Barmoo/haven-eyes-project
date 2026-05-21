@@ -38,8 +38,12 @@ const OctBanner = () => {
         {/* Right: Visual */}
         <div className="flex-1">
           <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
-            <div className="aspect-square bg-linear-to-br from-white/20 to-white/10 rounded-lg flex items-center justify-center">
-              <span className="text-6xl">🔬</span>
+            <div className="aspect-square rounded-lg overflow-hidden shadow-lg flex items-center justify-center bg-white/5">
+              <img
+                src="/images/oct-scan/image.png"
+                alt="OCT scan sample"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

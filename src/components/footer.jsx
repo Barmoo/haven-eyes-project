@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -64,10 +65,9 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Eye Care Services</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="/services" className="text-white/80 hover:text-white transition-colors">OCT Scanning</a></li>
-                <li><a href="/services" className="text-white/80 hover:text-white transition-colors">Eye Exams</a></li>
-                <li><a href="/services" className="text-white/80 hover:text-white transition-colors">Contact Lens Fitting</a></li>
-                <li><a href="/services" className="text-white/80 hover:text-white transition-colors">Home Eye Tests</a></li>
+                <li><Link to="/services#oct-scanning" className="text-white/80 hover:text-white transition-colors">OCT Scanning</Link></li>
+                <li><Link to="/services#eye-exams" className="text-white/80 hover:text-white transition-colors">Eye Exams</Link></li>
+                <li><Link to="/services#contact-lens-fitting" className="text-white/80 hover:text-white transition-colors">Contact Lens Fitting</Link></li>
               </ul>
             </div>
 
@@ -75,10 +75,9 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Products & More</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="/glasses" className="text-white/80 hover:text-white transition-colors">Designer Frames</a></li>
-                <li><a href="/" className="text-white/80 hover:text-white transition-colors">Contact Lenses</a></li>
-                <li><a href="/hearing-aids" className="text-white/80 hover:text-white transition-colors">Hearing Aids</a></li>
-                <li><a href="/" className="text-white/80 hover:text-white transition-colors">2-for-1 Offer</a></li>
+                <li><Link to="/glasses" className="text-white/80 hover:text-white transition-colors">Designer Frames</Link></li>
+                <li><Link to="/" className="text-white/80 hover:text-white transition-colors">Contact Lenses</Link></li>
+                <li><Link to="/" className="text-white/80 hover:text-white transition-colors">2-for-1 Offer</Link></li>
               </ul>
             </div>
 

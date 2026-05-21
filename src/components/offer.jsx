@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Offer = () => {
     return (
@@ -43,9 +44,9 @@ const Offer = () => {
                         </li>
                     </ul>
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <a href="/glasses" className="bg-[#3d6b1f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#2d5016] transition-colors text-center">
+                        <Link to="/glasses" className="bg-[#3d6b1f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#2d5016] transition-colors text-center">
                             Browse Frames
-                        </a>
+                        </Link>
                         <a href="https://haveneye.simplybook.me/v2/" target="_blank" rel="noopener noreferrer" className="border-2 border-[#3d6b1f] text-[#3d6b1f] font-semibold py-3 px-8 rounded-full hover:bg-[#3d6b1f] hover:text-white transition-colors text-center">
                             Claim Offer
                         </a>

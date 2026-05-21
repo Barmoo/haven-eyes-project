@@ -5,20 +5,20 @@ const TrustSignals = () => {
   const signals = [
     {
       icon: <Users size={40} />,
-      stat: '5,000+',
+      stat: '100+',
       label: 'Patients Served',
-      description: 'Trusted by thousands in Greater Accra',
+      description: 'Trusted by many in Greater Accra',
     },
     {
       icon: <Award size={40} />,
       stat: '★★★★★',
       label: '4.9 Rating',
-      description: 'Based on 200+ patient reviews',
+      description: 'Based on 100+ patient reviews',
     },
     {
       icon: <Clock size={40} />,
-      stat: '15+',
-      label: 'Years Experience',
+      stat: 'Newly Opened',
+      label: 'Experienced Optometrists',
       description: 'Dedicated to eye care excellence',
     },
   ];

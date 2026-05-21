@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 /* ---------------- DATA ---------------- */
 const glassesProducts = [
@@ -65,9 +66,9 @@ const Product = () => {
           </div>
 
           <div className="text-center mt-10">
-            <a href="/glasses" className="inline-block bg-[#3d6b1f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#2d5016] transition-colors">
+            <Link to="/glasses" className="inline-block bg-[#3d6b1f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#2d5016] transition-colors">
               View All Frames
-            </a>
+            </Link>
           </div>
         </div>
       </div>

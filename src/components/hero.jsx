@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
 
 const Hero = () => {
@@ -33,12 +34,12 @@ const Hero = () => {
           </a>
 
           {/* Secondary CTA - View Services */}
-          <a
-            href="/services"
+          <Link
+            to="/services"
             className="w-full sm:w-auto bg-white border-2 border-[#3d6b1f] text-[#3d6b1f] py-4 px-8 rounded-full font-semibold hover:bg-[#3d6b1f] hover:text-white transition-all text-base sm:text-lg shadow-md"
           >
             Explore Services
-          </a>
+          </Link>
 
           {/* Location Button */}
           <button
