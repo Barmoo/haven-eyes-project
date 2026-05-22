@@ -7,10 +7,10 @@ const PromoBar = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="bg-linear-to-r from-[#2d5016] to-[#3d6b1f] text-white py-2 px-4 flex items-center justify-between sticky top-0 z-60">
+    <div className="bg-linear-to-r from-[#133f72] to-[#1d4f91] text-white py-2 px-4 flex items-center justify-between sticky top-0 z-60">
       <div className="flex-1 text-center">
         <p className="text-sm sm:text-base font-semibold">
-          🎉 Limited Time: 2-for-1 Offer on Premium Frames - Book Your OCT Scan Today!
+          🎉 Book your OCT scan and explore premium frames with expert fitting support.
         </p>
       </div>
       <button

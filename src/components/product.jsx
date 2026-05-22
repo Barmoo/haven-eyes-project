@@ -22,8 +22,8 @@ const bestLovedLensesProducts = [
 
 /* ---------------- CARD - Updated Design */
 const ProductCard = ({ brand, model, price, image }) => (
-  <div className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300 hover:border-[#3d6b1f]">
-    <div className="h-56 flex items-center justify-center bg-[#f5f1e8] p-6 overflow-hidden">
+  <div className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300 hover:border-[#1d4f91]">
+    <div className="h-56 flex items-center justify-center bg-[#eef4fb] p-6 overflow-hidden">
       <img
         src={image}
         alt={brand}
@@ -34,7 +34,7 @@ const ProductCard = ({ brand, model, price, image }) => (
     <div className="p-5 text-center border-t border-gray-100">
       <p className="font-semibold text-gray-900 text-sm">{brand}</p>
       <p className="text-gray-500 text-xs uppercase tracking-wide mt-1 mb-3">{model}</p>
-      <p className="font-bold text-[#3d6b1f] text-lg">{price}</p>
+      <p className="font-bold text-[#1d4f91] text-lg">{price}</p>
     </div>
   </div>
 );
@@ -66,7 +66,7 @@ const Product = () => {
           </div>
 
           <div className="text-center mt-10">
-            <Link to="/glasses" className="inline-block bg-[#3d6b1f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#2d5016] transition-colors">
+            <Link to="/glasses" className="inline-block bg-[#1d4f91] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#133f72] transition-colors">
               View All Frames
             </Link>
           </div>
@@ -74,7 +74,7 @@ const Product = () => {
       </div>
 
       {/* -------- Section 2: Contact Lenses -------- */}
-      <div id="contact-lenses" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-[#f5f1e8]">
+      <div id="contact-lenses" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-[#eef4fb]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-gray-900 mb-3">
@@ -92,7 +92,7 @@ const Product = () => {
           </div>
 
           <div className="text-center mt-10">
-            <a href="https://haveneye.simplybook.me/v2/" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#3d6b1f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#2d5016] transition-colors">
+            <a href="https://haveneye.simplybook.me/v2/" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#1d4f91] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#133f72] transition-colors">
               Get Fitted for Contact Lenses
             </a>
           </div>

@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-8 z-40 bg-white shadow-md border-b border-gray-100">
+    <nav className="sticky top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-200">
       {/* Main navbar row */}
       <div className="flex items-center justify-between w-full max-w-screen-2xl mx-auto px-2 sm:px-4 py-2 sm:py-3">
         {/* Left: Hamburger menu (mobile only) */}
@@ -35,7 +35,7 @@ const Navbar = () => {
             href="https://haveneye.simplybook.me/v2/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#3d6b1f] text-white font-semibold py-2 px-5 rounded-full hover:bg-[#2d5016] transition-colors text-sm"
+            className="bg-[#1d4f91] text-white font-semibold py-2 px-5 rounded-full hover:bg-[#133f72] transition-colors text-sm"
           >
             Book Appointment
           </a>
@@ -56,15 +56,15 @@ const Navbar = () => {
                       className={({ isActive }) =>
                         `text-sm font-medium transition-colors duration-200 border-b-2 pb-1 ${
                           isActive
-                            ? 'text-[#3d6b1f] font-semibold border-[#3d6b1f]'
-                            : 'text-gray-700 hover:text-[#3d6b1f] border-transparent hover:border-[#3d6b1f]'
+                            ? 'text-[#1d4f91] font-semibold border-[#1d4f91]'
+                            : 'text-gray-700 hover:text-[#1d4f91] border-transparent hover:border-[#1d4f91]'
                         }`
                       }
                     >
                       {item.label}
                     </NavLink>
                   ) : (
-                    <a href={item.href} className="text-sm font-medium text-gray-700 hover:text-[#3d6b1f] border-b-2 border-transparent pb-1 hover:border-[#3d6b1f] transition-colors duration-200">
+                    <a href={item.href} className="text-sm font-medium text-gray-700 hover:text-[#1d4f91] border-b-2 border-transparent pb-1 hover:border-[#1d4f91] transition-colors duration-200">
                       {item.label}
                     </a>
                   )}
@@ -77,7 +77,7 @@ const Navbar = () => {
               href="https://haveneye.simplybook.me/v2/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#3d6b1f] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#2d5016] transition-colors duration-200 shadow-sm hover:shadow-md"
+              className="bg-[#1d4f91] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#133f72] transition-colors duration-200 shadow-sm hover:shadow-md"
             >
               Book Appointment
             </a>
@@ -98,8 +98,8 @@ const Navbar = () => {
                       className={({ isActive }) =>
                         `text-base font-medium block py-3 px-4 rounded-lg transition-all duration-200 ${
                           isActive
-                            ? 'text-[#3d6b1f] font-semibold bg-[#f5f1e8] border-l-4 border-[#3d6b1f]'
-                            : 'text-gray-700 hover:text-[#3d6b1f] hover:bg-gray-50 border-l-4 border-transparent'
+                            ? 'text-[#1d4f91] font-semibold bg-[#eef4fb] border-l-4 border-[#1d4f91]'
+                            : 'text-gray-700 hover:text-[#1d4f91] hover:bg-gray-50 border-l-4 border-transparent'
                         }`
                       }
                       onClick={() => setMobileMenuOpen(false)}
@@ -109,7 +109,7 @@ const Navbar = () => {
                   ) : (
                     <a
                       href={item.href}
-                      className="text-base font-medium text-gray-700 hover:text-[#3d6b1f] block py-3 px-4 rounded-lg hover:bg-gray-50 transition-all duration-200 border-l-4 border-transparent"
+                      className="text-base font-medium text-gray-700 hover:text-[#1d4f91] block py-3 px-4 rounded-lg hover:bg-gray-50 transition-all duration-200 border-l-4 border-transparent"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.label}
@@ -122,7 +122,7 @@ const Navbar = () => {
                   href="https://haveneye.simplybook.me/v2/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-[#3d6b1f] text-white px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2d5016] transition-colors duration-200 block text-center shadow-sm hover:shadow-md"
+                  className="w-full bg-[#1d4f91] text-white px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#133f72] transition-colors duration-200 block text-center shadow-sm hover:shadow-md"
                 >
                   Book Appointment
                 </a>

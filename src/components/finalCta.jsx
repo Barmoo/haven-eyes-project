@@ -2,7 +2,7 @@ import React from 'react';
 
 const FinalCta = () => {
   return (
-    <div className="bg-linear-to-r from-[#3d6b1f] to-[#2d5016] text-white py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-linear-to-r from-[#1d4f91] to-[#133f72] text-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold mb-6 leading-tight">
           Ready When You Are
@@ -16,7 +16,7 @@ const FinalCta = () => {
             href="https://haveneye.simplybook.me/v2/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#f5f1e8] text-[#2d5016] font-semibold py-4 px-10 rounded-full hover:bg-white transition-colors text-lg hover:shadow-lg"
+            className="bg-[#eef4fb] text-[#133f72] font-semibold py-4 px-10 rounded-full hover:bg-white transition-colors text-lg hover:shadow-lg"
           >
             Book Your Appointment Today
           </a>

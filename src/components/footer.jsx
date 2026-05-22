@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#2d5016] text-white">
+    <footer className="bg-[#133f72] text-white">
       {/* Main Footer Content */}
       <div className="px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-7xl mx-auto">
@@ -77,7 +77,6 @@ const Footer = () => {
               <ul className="space-y-2 text-sm">
                 <li><Link to="/glasses" className="text-white/80 hover:text-white transition-colors">Designer Frames</Link></li>
                 <li><Link to="/" className="text-white/80 hover:text-white transition-colors">Contact Lenses</Link></li>
-                <li><Link to="/" className="text-white/80 hover:text-white transition-colors">2-for-1 Offer</Link></li>
               </ul>
             </div>
 

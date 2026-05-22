@@ -24,7 +24,7 @@ const StickyCtaButton = () => {
         href="https://haveneye.simplybook.me/v2/"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-[#3d6b1f] text-white font-bold py-3 px-6 rounded-full shadow-xl hover:bg-[#2d5016] transition-all duration-300 flex items-center gap-2 text-base sm:text-lg"
+        className="bg-[#1d4f91] text-white font-bold py-3 px-6 rounded-full shadow-xl hover:bg-[#133f72] transition-all duration-300 flex items-center gap-2 text-base sm:text-lg"
       >
         <span>📅</span> Book Appointment
       </a>

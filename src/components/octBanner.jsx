@@ -2,7 +2,7 @@ import React from 'react';
 
 const OctBanner = () => {
   return (
-    <div className="bg-linear-to-r from-[#3d6b1f] to-[#2d5016] text-white py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-linear-to-r from-[#1d4f91] to-[#133f72] text-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-8">
         {/* Left: Text Content */}
         <div className="flex-1 text-center lg:text-left">
@@ -17,7 +17,7 @@ const OctBanner = () => {
               href="https://haveneye.simplybook.me/v2/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#f5f1e8] text-[#2d5016] font-semibold py-3 px-8 rounded-full hover:bg-white transition-colors text-base"
+              className="bg-[#eef4fb] text-[#133f72] font-semibold py-3 px-8 rounded-full hover:bg-white transition-colors text-base"
             >
               Book OCT Scan
             </a>

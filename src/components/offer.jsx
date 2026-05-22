@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Offer = () => {
     return (
-        <div className="flex flex-col w-full bg-[#f5f1e8]">
+        <div className="flex flex-col w-full bg-[#eef4fb]">
 
             {/* Header */}
             <div className="flex flex-col items-center text-center px-4 sm:px-6 py-10 sm:py-16 mb-4 lg:mb-8">
@@ -20,7 +20,7 @@ const Offer = () => {
 
                 {/* Left - Text */}
                 <div className="flex flex-col justify-center w-full lg:w-1/2 px-4 sm:px-8 lg:px-16 py-10 sm:py-16 lg:py-20">
-                    <span className="text-xs sm:text-sm font-semibold text-[#3d6b1f] uppercase tracking-widest mb-3 sm:mb-4">
+                    <span className="text-xs sm:text-sm font-semibold text-[#1d4f91] uppercase tracking-widest mb-3 sm:mb-4">
                         Exclusive Offer
                     </span>
                     <h3 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
@@ -31,23 +31,23 @@ const Offer = () => {
                     </p>
                     <ul className="space-y-3 mb-8 text-gray-700">
                         <li className="flex items-start gap-3">
-                            <span className="text-lg font-bold text-[#3d6b1f]">✓</span>
+                            <span className="text-lg font-bold text-[#1d4f91]">✓</span>
                             <span>Free choice on the second pair</span>
                         </li>
                         <li className="flex items-start gap-3">
-                            <span className="text-lg font-bold text-[#3d6b1f]">✓</span>
+                            <span className="text-lg font-bold text-[#1d4f91]">✓</span>
                             <span>Premium designer frames included</span>
                         </li>
                         <li className="flex items-start gap-3">
-                            <span className="text-lg font-bold text-[#3d6b1f]">✓</span>
+                            <span className="text-lg font-bold text-[#1d4f91]">✓</span>
                             <span>Full eye test and fitting included</span>
                         </li>
                     </ul>
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <Link to="/glasses" className="bg-[#3d6b1f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#2d5016] transition-colors text-center">
+                        <Link to="/glasses" className="bg-[#1d4f91] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#133f72] transition-colors text-center">
                             Browse Frames
                         </Link>
-                        <a href="https://haveneye.simplybook.me/v2/" target="_blank" rel="noopener noreferrer" className="border-2 border-[#3d6b1f] text-[#3d6b1f] font-semibold py-3 px-8 rounded-full hover:bg-[#3d6b1f] hover:text-white transition-colors text-center">
+                        <a href="https://haveneye.simplybook.me/v2/" target="_blank" rel="noopener noreferrer" className="border-2 border-[#1d4f91] text-[#1d4f91] font-semibold py-3 px-8 rounded-full hover:bg-[#1d4f91] hover:text-white transition-colors text-center">
                             Claim Offer
                         </a>
                     </div>

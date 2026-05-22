@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const services = [
     {
@@ -70,10 +71,26 @@ const services = [
 ];
 
 const Service = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const id = location.hash.replace('#', '');
+            const element = document.getElementById(id);
+            if (element) {
+                const navbarOffset = 96;
+                const top = element.getBoundingClientRect().top + window.pageYOffset - navbarOffset;
+                window.scrollTo({ top, behavior: 'smooth' });
+            }
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }, [location]);
+
     return (
         <div className="flex flex-col w-full bg-gray-50 min-h-screen">
             {/* -------- Header -------- */}
-            <div className="px-4 sm:px-6 lg:px-8 py-16 text-center bg-linear-to-br from-[#3d6b1f] to-[#2d5016] text-white relative overflow-hidden">
+            <div className="px-4 sm:px-6 lg:px-8 py-16 text-center bg-linear-to-br from-[#1d4f91] to-[#133f72] text-white relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/10"></div>
                 <div className="relative z-10">
                     <div className="text-6xl mb-4">👁️</div>
@@ -95,6 +112,7 @@ const Service = () => {
                             <div
                                 id={service.id}
                                 key={index}
+                                style={{ scrollMarginTop: '96px' }}
                                 className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
                             >
                                 {/* Image */}
@@ -111,7 +129,7 @@ const Service = () => {
 
                                 {/* Content */}
                                 <div className="p-6">
-                                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#3d6b1f] transition-colors">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#1d4f91] transition-colors">
                                         {service.title}
                                     </h3>
                                     <p className="text-gray-600 text-sm leading-relaxed mb-4">
@@ -128,7 +146,7 @@ const Service = () => {
             </div>
 
             {/* -------- Call to Action -------- */}
-            <div className="px-4 sm:px-6 lg:px-8 py-16 bg-linear-to-r from-[#3d6b1f] to-[#2d5016] text-white text-center relative overflow-hidden">
+            <div className="px-4 sm:px-6 lg:px-8 py-16 bg-linear-to-r from-[#1d4f91] to-[#133f72] text-white text-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="relative z-10 max-w-4xl mx-auto">
                     <h2 className="text-2xl sm:text-3xl font-bold mb-4">
@@ -143,7 +161,7 @@ const Service = () => {
                             href="https://haveneye.simplybook.me/v2/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-white text-[#3d6b1f] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                            className="bg-white text-[#1d4f91] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                         >
                             📅 Book Appointment
                         </a>
@@ -151,7 +169,7 @@ const Service = () => {
                             href="https://wa.me/233596915333?text=Hello%20I%20want%20to%20learn%20more%20about%20your%20eye%20care%20services"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#3d6b1f] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                            className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#1d4f91] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                         >
                             📞 Learn More
                         </a>

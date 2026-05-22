@@ -32,7 +32,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f5f1e8]">
+    <div className="py-16 px-4 sm:px-6 lg:px-8 bg-[#eef4fb]">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-gray-900 mb-4">
@@ -47,7 +47,7 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg border border-gray-200 hover:border-[#3d6b1f] transition-colors"
+              className="bg-white rounded-lg border border-gray-200 hover:border-[#1d4f91] transition-colors"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -58,7 +58,7 @@ const FAQ = () => {
                 </h3>
                 <ChevronDown
                   size={20}
-                  className={`text-[#3d6b1f] shrink-0 transition-transform ${
+                  className={`text-[#1d4f91] shrink-0 transition-transform ${
                     openIndex === index ? 'rotate-180' : ''
                   }`}
                 />
@@ -75,7 +75,7 @@ const FAQ = () => {
           ))}
         </div>
 
-        <div className="mt-12 p-6 bg-white rounded-lg border border-[#3d6b1f] text-center">
+        <div className="mt-12 p-6 bg-white rounded-lg border border-[#1d4f91] text-center">
           <p className="text-gray-600 mb-4">
             Didn't find your answer? Contact us directly.
           </p>
@@ -83,7 +83,7 @@ const FAQ = () => {
             href="https://wa.me/233557767766?text=Hello%20I%20have%20a%20question%20about%20Haven%20Eye%20services"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#3d6b1f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#2d5016] transition-colors"
+            className="inline-block bg-[#1d4f91] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#133f72] transition-colors"
           >
             Chat with Us on WhatsApp
           </a>

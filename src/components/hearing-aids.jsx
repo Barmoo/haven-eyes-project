@@ -4,7 +4,7 @@ const HearingAids = () => {
   return (
     <div className="flex flex-col w-full bg-gray-50 min-h-screen">
       {/* Header */}
-      <div className="px-4 sm:px-6 lg:px-8 py-16 text-center bg-linear-to-br from-[#3d6b1f] to-[#2d5016] text-white relative overflow-hidden">
+      <div className="px-4 sm:px-6 lg:px-8 py-16 text-center bg-linear-to-br from-[#1d4f91] to-[#133f72] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative z-10">
           <div className="text-6xl mb-4">🎧</div>
@@ -67,7 +67,7 @@ const HearingAids = () => {
                 href="https://haveneye.simplybook.me/v2/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#3d6b1f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#2d5016] transition-colors inline-block"
+                className="bg-[#1d4f91] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#133f72] transition-colors inline-block"
               >
                 Book a Hearing Consultation
               </a>
@@ -75,7 +75,7 @@ const HearingAids = () => {
           </div>
 
           {/* Benefits Grid */}
-          <div className="bg-[#f5f1e8] rounded-lg p-8">
+          <div className="bg-[#eef4fb] rounded-lg p-8">
             <h3 className="text-2xl font-serif font-bold text-gray-900 mb-8 text-center">
               Why Choose Haven for Hearing Aids?
             </h3>
@@ -110,7 +110,7 @@ const HearingAids = () => {
       </div>
 
       {/* CTA */}
-      <div className="bg-[#f5f1e8] px-4 sm:px-6 lg:px-8 py-12 text-center">
+      <div className="bg-[#eef4fb] px-4 sm:px-6 lg:px-8 py-12 text-center">
         <h3 className="text-2xl font-serif font-bold text-gray-900 mb-4">
           Ready to Improve Your Hearing?
         </h3>
@@ -121,7 +121,7 @@ const HearingAids = () => {
           href="https://wa.me/233557767766?text=Hello%20I%20want%20to%20book%20a%20hearing%20aid%20consultation"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-[#3d6b1f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#2d5016] transition-colors"
+          className="inline-block bg-[#1d4f91] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#133f72] transition-colors"
         >
           Contact Us on WhatsApp
         </a>

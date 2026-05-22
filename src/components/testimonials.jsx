@@ -17,7 +17,7 @@ const Testimonials = () => {
     {
       name: 'Abena Osei',
       role: 'Patient',
-      text: 'The 2-for-1 offer let me get both work frames and casual sunglasses. The fitting service was excellent and my new glasses are perfect.',
+      text: 'The fitting service was excellent and I left with glasses that feel premium, comfortable, and exactly right for my everyday needs.',
       avatar: '👩‍🦱',
     },
   ];
@@ -38,7 +38,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-[#f5f1e8] p-8 rounded-xl border-l-4 border-[#3d6b1f] hover:shadow-lg transition-shadow"
+              className="bg-[#eef4fb] p-8 rounded-xl border-l-4 border-[#1d4f91] hover:shadow-lg transition-shadow"
             >
               <div className="flex items-center mb-4">
                 <span className="text-4xl mr-4">{testimonial.avatar}</span>
@@ -50,7 +50,7 @@ const Testimonials = () => {
               <p className="text-gray-700 text-base leading-relaxed italic">
                 "{testimonial.text}"
               </p>
-              <div className="flex items-center mt-4 text-[#3d6b1f]">
+              <div className="flex items-center mt-4 text-[#1d4f91]">
                 {'★'.repeat(5)}
               </div>
             </div>

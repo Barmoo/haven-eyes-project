@@ -44,10 +44,10 @@ const Feature = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="group flex flex-col items-center text-center gap-4 border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-[#3d6b1f] transition-all duration-300 bg-[#f5f1e8]"
+                className="group flex flex-col items-center text-center gap-4 border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-[#1d4f91] transition-all duration-300 bg-[#eef4fb]"
               >
                 {/* Icon */}
-                <div className="text-[#3d6b1f] group-hover:scale-110 transition-transform">
+                <div className="text-[#1d4f91] group-hover:scale-110 transition-transform">
                   {feature.icon}
                 </div>
 
@@ -64,7 +64,7 @@ const Feature = () => {
                     href={feature.link}
                     target={feature.link.startsWith('http') ? '_blank' : undefined}
                     rel={feature.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="inline-flex items-center gap-1 text-[#3d6b1f] font-bold hover:underline transition-colors"
+                    className="inline-flex items-center gap-1 text-[#1d4f91] font-bold hover:underline transition-colors"
                   >
                     {feature.label} <span className="transition-transform group-hover:translate-x-1">›</span>
                   </a>
@@ -89,7 +89,7 @@ const Feature = () => {
 
         {/* Content */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center px-4 sm:px-8 lg:px-12 py-8 lg:py-0">
-          <span className="text-sm font-semibold text-[#3d6b1f] uppercase tracking-wide mb-3">
+          <span className="text-sm font-semibold text-[#1d4f91] uppercase tracking-wide mb-3">
             Our Signature Service
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-gray-900 mb-6 leading-tight">
@@ -102,21 +102,21 @@ const Feature = () => {
 
           <div className="space-y-3 mb-8">
             <div className="flex items-start gap-3">
-              <span className="text-lg font-bold text-[#3d6b1f] mt-1">✓</span>
+              <span className="text-lg font-bold text-[#1d4f91] mt-1">✓</span>
               <div>
                 <p className="font-semibold text-gray-900">Non-invasive imaging</p>
                 <p className="text-gray-600 text-sm">Quick, painless, and highly accurate results</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-lg font-bold text-[#3d6b1f] mt-1">✓</span>
+              <span className="text-lg font-bold text-[#1d4f91] mt-1">✓</span>
               <div>
                 <p className="font-semibold text-gray-900">Early disease detection</p>
                 <p className="text-gray-600 text-sm">Catch conditions before they progress</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-lg font-bold text-[#3d6b1f] mt-1">✓</span>
+              <span className="text-lg font-bold text-[#1d4f91] mt-1">✓</span>
               <div>
                 <p className="font-semibold text-gray-900">Comprehensive assessment</p>
                 <p className="text-gray-600 text-sm">Part of your complete eye health evaluation</p>
@@ -129,7 +129,7 @@ const Feature = () => {
               href="https://haveneye.simplybook.me/v2/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#3d6b1f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#2d5016] transition-colors text-center"
+              className="bg-[#1d4f91] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#133f72] transition-colors text-center"
             >
               Book OCT Scan - GH₵1,500
             </a>
@@ -138,7 +138,7 @@ const Feature = () => {
               href="https://wa.me/233557767766?text=Hello%20I%20want%20to%20learn%20about%20OCT%20eye%20tests"
               target="_blank"
               rel="noopener noreferrer"
-              className="border-2 border-[#3d6b1f] text-[#3d6b1f] font-semibold py-3 px-8 rounded-full hover:bg-[#3d6b1f] hover:text-white transition-colors text-center"
+              className="border-2 border-[#1d4f91] text-[#1d4f91] font-semibold py-3 px-8 rounded-full hover:bg-[#1d4f91] hover:text-white transition-colors text-center"
             >
               Learn More
             </a>
