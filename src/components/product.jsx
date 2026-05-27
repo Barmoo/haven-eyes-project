@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 
 /* ---------------- DATA ---------------- */
 const glassesProducts = [
-  { brand: "adidas", model: "SP0109-1 SUN", price: "GH₵ 2,890", image: "/images/frames/adidas.png" },
-  { brand: "HUGO", model: "HG 33", price: "GH₵ 2,550", image: "/images/frames/hugo.png" },
-  { brand: "Specsavers", model: "SANDHAMMAREN SUN RX", price: "GH₵ 1,190", image: "/images/frames/Specsavers.png" },
-  { brand: "Kylie Minogue", model: "BREATHE", price: "GH₵ 2,210", image: "/images/frames/Kylie Minogue.png" },
+  { brand: "adidas", model: "SP0109-1 SUN", price: " ", image: "/images/frames/adidas.png" },
+  { brand: "HUGO", model: "HG 33", price: "", image: "/images/frames/hugo.png" },
+  { brand: "Specsavers", model: "SANDHAMMAREN SUN RX", price: "", image: "/images/frames/Specsavers.png" },
+  { brand: "Kylie Minogue", model: "BREATHE", price: "", image: "/images/frames/Kylie Minogue.png" },
 ];
 
 const bestLovedLensesProducts = [
-  { brand: "Specsavers easyvision", model: "Clarision Sphere", price: "GH₵ 230", image: "/images/best-loved-lenses/easyvision-clarision-sphere.png" },
-  { brand: "1 Day Acuvue", model: "Moist", price: "GH₵ 280", image: "/images/best-loved-lenses/1 Day Acuvue Moist.png" },
-  { brand: "1 Day Acuvue", model: "Oasys", price: "GH₵ 306", image: "/images/best-loved-lenses/1 Day Acuvue Oasys.png" },
-  { brand: "Specsavers easyvision", model: "Sential", price: "GH₵ 230", image: "/images/best-loved-lenses/easyvision Sential.png" },
-  { brand: "Specsavers easyvision", model: "Umere Toric", price: "GH₵ 255", image: "/images/best-loved-lenses/easyvision Umere Toric.png" },
-  { brand: "Specsavers easyvision", model: "Umere", price: "GH₵ 280", image: "/images/best-loved-lenses/easyvision Umere.png" },
-  { brand: "Specsavers easyvision", model: "Linarial", price: "GH₵ 306", image: "/images/best-loved-lenses/easyvision Linarial.png" },
-  { brand: "Specsavers easyvision", model: "Vitrea", price: "GH₵ 230", image: "/images/best-loved-lenses/easyvision Vitrea.png" },
+  { brand: "Specsavers easyvision", model: "Clarision Sphere", price: "", image: "/images/best-loved-lenses/easyvision-clarision-sphere.png" },
+  { brand: "1 Day Acuvue", model: "Moist", price: "", image: "/images/best-loved-lenses/1 Day Acuvue Moist.png" },
+  { brand: "1 Day Acuvue", model: "Oasys", price: "", image: "/images/best-loved-lenses/1 Day Acuvue Oasys.png" },
+  { brand: "Specsavers easyvision", model: "Sential", price: "", image: "/images/best-loved-lenses/easyvision Sential.png" },
+  { brand: "Specsavers easyvision", model: "Umere Toric", price: "", image: "/images/best-loved-lenses/easyvision Umere Toric.png" },
+  { brand: "Specsavers easyvision", model: "Umere", price: "", image: "/images/best-loved-lenses/easyvision Umere.png" },
+  { brand: "Specsavers easyvision", model: "Linarial", price: "", image: "/images/best-loved-lenses/easyvision Linarial.png" },
+  { brand: "Specsavers easyvision", model: "Vitrea", price: "", image: "/images/best-loved-lenses/easyvision Vitrea.png" },
 ];
 
 /* ---------------- CARD - Updated Design */
