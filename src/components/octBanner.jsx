@@ -31,7 +31,7 @@ const OctBanner = () => {
             </a>
           </div>
           <p className="text-white/80 text-sm mt-6 font-semibold">
-            from GH₵1,500 • Non-invasive • Takes 15-20 minutes
+            Affordable • Non-invasive • Takes 15-20 minutes
           </p>
         </div>
 
