@@ -131,7 +131,7 @@ const Feature = () => {
               rel="noopener noreferrer"
               className="bg-[#1d4f91] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#133f72] transition-colors text-center"
             >
-              Book OCT Scan - GH₵1,500
+              Book OCT Scan 
             </a>
 
             <a
