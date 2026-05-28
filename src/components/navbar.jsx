@@ -6,129 +6,103 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { label: 'Home', href: '/', isRoute: true },
-    { label: 'Glasses', href: '/glasses', isRoute: true },
-    { label: 'Services', href: '/services', isRoute: true },
-    { label: 'About', href: '/about', isRoute: true },
-    { label: 'Contact', href: '/contact', isRoute: true },
+    { label: 'Home', href: '/' },
+    { label: 'Glasses', href: '/glasses' },
+    { label: 'Services', href: '/services' },
+    { label: 'About', href: '/about' },
+    { label: 'Contact', href: '/contact' },
   ];
 
   return (
-    <nav className="sticky top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-200">
-      {/* Main navbar row */}
-      <div className="flex items-center justify-between w-full max-w-screen-2xl mx-auto px-2 sm:px-4 py-2 sm:py-3">
-        {/* Left: Hamburger menu (mobile only) */}
+    <nav className="sticky top-0 left-0 right-0 z-40 bg-white shadow-sm border-b border-gray-200">
+
+      {/* ── Single navbar row ── */}
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 sm:h-18">
+
+        {/* Logo */}
+        <NavLink to="/" className="flex-shrink-0">
+          <img
+            src="/images/logo/haven-logo.jpeg"
+            alt="Haven Eye Ltd Logo"
+            className="h-10 sm:h-12 w-auto object-contain"
+          />
+        </NavLink>
+
+        {/* Desktop nav links */}
+        <ul className="hidden lg:flex items-center gap-6 list-none m-0 p-0">
+          {navItems.map((item) => (
+            <li key={item.href}>
+              <NavLink
+                to={item.href}
+                className={({ isActive }) =>
+                  `text-sm font-medium pb-1 border-b-2 transition-colors duration-200 ${
+                    isActive
+                      ? 'text-[#1d4f91] border-[#1d4f91]'
+                      : 'text-gray-700 border-transparent hover:text-[#1d4f91] hover:border-[#1d4f91]'
+                  }`
+                }
+              >
+                {item.label}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+
+        {/* Desktop CTA */}
+        <a
+          href="https://haveneye.simplybook.me/v2/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden lg:inline-block bg-[#1d4f91] text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-[#133f72] transition-colors duration-200"
+        >
+          Book Appointment
+        </a>
+
+        {/* Mobile hamburger */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden p-2 rounded hover:bg-gray-100 text-gray-700"
+          className="lg:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
           aria-label="Toggle menu"
         >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
-
-        {/* Center: logo */}
-        <img src="/images/logo/haven-logo.jpeg" alt="Haven Eye Ltd Logo" className="h-8 sm:h-10 lg:h-12" />
-
-        {/* Right: Book button (desktop only) */}
-        <div className="hidden lg:flex items-center gap-4">
-          <a
-            href="https://haveneye.simplybook.me/v2/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#1d4f91] text-white font-semibold py-2 px-5 rounded-full hover:bg-[#133f72] transition-colors text-sm"
-          >
-            Book Appointment
-          </a>
-        </div>
       </div>
 
-      {/* Desktop navigation row (hidden on mobile) */}
-      <div className="hidden lg:block border-t border-gray-100">
-        <div className="max-w-screen-2xl mx-auto px-4">
-          <div className="flex items-center justify-center py-2 gap-8">
-            {/* Navigation Links */}
-            <ul className="flex gap-8 items-center list-none m-0 p-0">
-              {navItems.map((item, index) => (
-                <li key={index}>
-                  {item.isRoute ? (
-                    <NavLink
-                      to={item.href}
-                      className={({ isActive }) =>
-                        `text-sm font-medium transition-colors duration-200 border-b-2 pb-1 ${
-                          isActive
-                            ? 'text-[#1d4f91] font-semibold border-[#1d4f91]'
-                            : 'text-gray-700 hover:text-[#1d4f91] border-transparent hover:border-[#1d4f91]'
-                        }`
-                      }
-                    >
-                      {item.label}
-                    </NavLink>
-                  ) : (
-                    <a href={item.href} className="text-sm font-medium text-gray-700 hover:text-[#1d4f91] border-b-2 border-transparent pb-1 hover:border-[#1d4f91] transition-colors duration-200">
-                      {item.label}
-                    </a>
-                  )}
-                </li>
-              ))}
-            </ul>
-
-            {/* CTA Button */}
-            <a
-              href="https://haveneye.simplybook.me/v2/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#1d4f91] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#133f72] transition-colors duration-200 shadow-sm hover:shadow-md"
-            >
-              Book Appointment
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile menu (visible when open) */}
+      {/* ── Mobile menu ── */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-gray-200 bg-white shadow-lg">
-          <div className="px-4 py-6">
-            <ul className="flex flex-col gap-1 list-none m-0 p-0">
-              {navItems.map((item, index) => (
-                <li key={index}>
-                  {item.isRoute ? (
-                    <NavLink
-                      to={item.href}
-                      className={({ isActive }) =>
-                        `text-base font-medium block py-3 px-4 rounded-lg transition-all duration-200 ${
-                          isActive
-                            ? 'text-[#1d4f91] font-semibold bg-[#eef4fb] border-l-4 border-[#1d4f91]'
-                            : 'text-gray-700 hover:text-[#1d4f91] hover:bg-gray-50 border-l-4 border-transparent'
-                        }`
-                      }
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {item.label}
-                    </NavLink>
-                  ) : (
-                    <a
-                      href={item.href}
-                      className="text-base font-medium text-gray-700 hover:text-[#1d4f91] block py-3 px-4 rounded-lg hover:bg-gray-50 transition-all duration-200 border-l-4 border-transparent"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {item.label}
-                    </a>
-                  )}
-                </li>
-              ))}
-              <li className="pt-6 border-t border-gray-200 mt-4">
-                <a
-                  href="https://haveneye.simplybook.me/v2/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-[#1d4f91] text-white px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#133f72] transition-colors duration-200 block text-center shadow-sm hover:shadow-md"
+        <div className="lg:hidden border-t border-gray-100 bg-white">
+          <ul className="flex flex-col px-4 py-4 gap-1 list-none m-0 p-0">
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <NavLink
+                  to={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={({ isActive }) =>
+                    `block text-sm font-medium py-3 px-4 rounded-lg border-l-4 transition-all duration-200 ${
+                      isActive
+                        ? 'text-[#1d4f91] bg-[#eef4fb] border-[#1d4f91]'
+                        : 'text-gray-700 border-transparent hover:text-[#1d4f91] hover:bg-gray-50'
+                    }`
+                  }
                 >
-                  Book Appointment
-                </a>
+                  {item.label}
+                </NavLink>
               </li>
-            </ul>
-          </div>
+            ))}
+
+            {/* Mobile CTA */}
+            <li className="pt-4 mt-2 border-t border-gray-100">
+              <a
+                href="https://haveneye.simplybook.me/v2/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center bg-[#1d4f91] text-white text-sm font-semibold px-6 py-3 rounded-full hover:bg-[#133f72] transition-colors duration-200"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Book Appointment
+              </a>
+            </li>
+          </ul>
         </div>
       )}
     </nav>
@@ -136,4 +110,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
