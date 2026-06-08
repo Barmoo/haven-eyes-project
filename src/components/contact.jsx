@@ -135,12 +135,12 @@ const Contact = () => {
                   <GlobeIcon />
                   Website:{' '}
                   <a
-                    href="https://www.haven-eye.com"
+                    href="https://www.haveneyeltd.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#1d4f91] hover:underline ml-1"
                   >
-                    www.haven-eye.com
+                    www.haveneyeltd.com
                   </a>
                 </p>
               </div>
