@@ -2,6 +2,7 @@ import React from "react";
 
 /* ---------------- GLASSES IMAGES ---------------- */
 const glassesImages = [
+  { src: "/images/glasses/collection.png", alt: "Glasses collection display" },
   { src: "/images/glasses/angus-gray-bSjqyqukCjY-unsplash.jpg", alt: "Elegant glasses collection" },
   { src: "/images/glasses/bud-silva-kqguzgvYrtM-unsplash.jpg", alt: "Modern eyewear" },
   { src: "/images/glasses/charlesdeluvio-1-nx1QR5dTE-unsplash.jpg", alt: "Stylish frames" },
