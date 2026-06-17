@@ -65,19 +65,19 @@ const Hero = () => {
           <div className="absolute -top-8 -left-8 w-40 h-40 rounded-full bg-[#daf0ff]/70 blur-3xl" />
           <div className="absolute bottom-6 right-6 w-24 h-24 rounded-full bg-[#1d4f91]/10 blur-2xl" />
 
-          <div className="relative overflow-hidden rounded-[2rem] shadow-[0_30px_80px_rgba(29,79,145,0.18)] border border-white">
+          <div className="relative overflow-hidden rounded-[2rem] shadow-[0_30px_80px_rgba(29,79,145,0.18)] border border-white bg-white">
             <img
-              src="/images/hero/family.png"
-              alt="Family visiting Haven Eye clinic for eye care"
-              className="w-full h-[420px] sm:h-[520px] md:h-[600px] object-cover"
+              src="/images/offers/father's day.jpeg"
+              alt="Father's Day eye care offer at Haven Eye"
+              className="w-full h-[420px] sm:h-[520px] md:h-[600px] object-contain"
               loading="lazy"
             />
           </div>
 
           <div className="absolute bottom-8 left-6 bg-white/95 backdrop-blur-md border border-slate-200 rounded-3xl px-5 py-4 shadow-xl max-w-xs">
-            <p className="text-sm uppercase tracking-[0.24em] text-slate-500 mb-2">Trusted Care</p>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-500 mb-2">Father's Day Offer</p>
             <p className="text-lg font-semibold text-slate-900 leading-tight">
-              Family-friendly eye exams in a welcoming clinic environment.
+              See the full offer with premium father-friendly care.
             </p>
           </div>
         </div>

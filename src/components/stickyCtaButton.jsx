@@ -35,7 +35,7 @@ const StickyCtaButton = () => {
             <img
               src="/images/offers/father's day.jpeg"
               alt="Father's Day offer preview"
-              className="w-full h-auto max-h-[85vh] object-cover"
+              className="w-full h-auto max-h-[85vh] object-contain"
               loading="lazy"
             />
           </div>
