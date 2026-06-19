@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 const services = [
     {
@@ -165,6 +165,12 @@ const Service = () => {
                         >
                             📅 Book Appointment
                         </a>
+                        <Link
+                            to="/payment"
+                            className="bg-white text-[#1d4f91] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                        >
+                            💳 Pay for a Service
+                        </Link>
                         <a
                             href="https://wa.me/233596915333?text=Hello%20I%20want%20to%20learn%20more%20about%20your%20eye%20care%20services"
                             target="_blank"

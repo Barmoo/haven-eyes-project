@@ -16,6 +16,7 @@ import Service from './components/service';
 import Contact from './components/contact';
 import About from './components/about';
 import Glasses from './components/glasses';
+import Payment from './components/payment';
 
 
 const HomePage = () => (
@@ -63,6 +64,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/glasses" element={<Glasses />} />
         <Route path="/services" element={<Service />} />
+        <Route path="/payment" element={<Payment />} />
       </Routes>
       <Footer />
       <StickyCtaButton />
