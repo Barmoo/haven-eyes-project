@@ -409,20 +409,55 @@ const Payment = () => {
 
       {/* ── Bottom note ── */}
       <div className="px-4 sm:px-6 lg:px-8 py-8 bg-[#eef4fb] border-t border-gray-200">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-600">
-          <div className="flex items-center gap-2">
-            <span className="text-[#1d4f91] font-semibold">🔒 Secured by Paystack</span>
-            <span>— All prices in GHS</span>
+        <div className="max-w-7xl mx-auto space-y-4">
+          {/* Payment methods */}
+          <div className="flex items-center justify-center gap-4 mb-6 pb-6 border-b border-gray-300">
+            <span className="text-sm font-semibold text-gray-700">Accepted Payment Methods:</span>
+            {/* Visa */}
+            <svg
+              className="h-8 w-auto"
+              viewBox="0 0 48 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="48" height="32" rx="4" fill="#1A1F71" />
+              <path d="M12 20L14.4 12H18.8L16.4 20H12Z" fill="#FFFFFF" />
+              <path d="M20 20L22.4 12H26.8L24.4 20H20Z" fill="#FFFFFF" />
+              <path d="M28 20L30.4 12H34.8L32.4 20H28Z" fill="#FFFFFF" />
+              <text x="24" y="26" fontSize="6" fill="#FFFFFF" textAnchor="middle" fontWeight="bold">
+                VISA
+              </text>
+            </svg>
+            {/* Mastercard */}
+            <svg
+              className="h-8 w-auto"
+              viewBox="0 0 48 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="48" height="32" rx="4" fill="#EB001B" />
+              <circle cx="18" cy="16" r="8" fill="#FF5F00" />
+              <circle cx="30" cy="16" r="8" fill="#0066B2" />
+              <circle cx="24" cy="16" r="8" fill="#FF5F00" opacity="0.5" />
+            </svg>
           </div>
-          <div className="flex items-center gap-2">
-            <span>Need help?</span>
-            <Link to="/contact" className="text-[#1d4f91] font-semibold hover:underline">
-              Contact us
-            </Link>
-            <span>or call</span>
-            <a href="tel:+233596915333" className="text-[#1d4f91] font-semibold hover:underline">
-              +233 596 915 333
-            </a>
+
+          {/* Info row */}
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-600">
+            <div className="flex items-center gap-2">
+              <span className="text-[#1d4f91] font-semibold">🔒 Secured by Paystack</span>
+              <span>— All prices in GHS</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span>Need help?</span>
+              <Link to="/contact" className="text-[#1d4f91] font-semibold hover:underline">
+                Contact us
+              </Link>
+              <span>or call</span>
+              <a href="tel:+233596915333" className="text-[#1d4f91] font-semibold hover:underline">
+                +233 596 915 333
+              </a>
+            </div>
           </div>
         </div>
       </div>
