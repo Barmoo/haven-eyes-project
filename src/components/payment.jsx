@@ -407,42 +407,25 @@ const Payment = () => {
         </div>
       </div>
 
-      {/* ── Bottom note ── */}
-      <div className="px-4 sm:px-6 lg:px-8 py-8 bg-[#eef4fb] border-t border-gray-200">
-        <div className="max-w-7xl mx-auto space-y-4">
-          {/* Payment methods */}
-          <div className="flex items-center justify-center gap-4 mb-6 pb-6 border-b border-gray-300">
-            <span className="text-sm font-semibold text-gray-700">Accepted Payment Methods:</span>
-            {/* Visa */}
-            <svg
-              className="h-8 w-auto"
-              viewBox="0 0 48 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="48" height="32" rx="4" fill="#1A1F71" />
-              <path d="M12 20L14.4 12H18.8L16.4 20H12Z" fill="#FFFFFF" />
-              <path d="M20 20L22.4 12H26.8L24.4 20H20Z" fill="#FFFFFF" />
-              <path d="M28 20L30.4 12H34.8L32.4 20H28Z" fill="#FFFFFF" />
-              <text x="24" y="26" fontSize="6" fill="#FFFFFF" textAnchor="middle" fontWeight="bold">
-                VISA
-              </text>
-            </svg>
-            {/* Mastercard */}
-            <svg
-              className="h-8 w-auto"
-              viewBox="0 0 48 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="48" height="32" rx="4" fill="#EB001B" />
-              <circle cx="18" cy="16" r="8" fill="#FF5F00" />
-              <circle cx="30" cy="16" r="8" fill="#0066B2" />
-              <circle cx="24" cy="16" r="8" fill="#FF5F00" opacity="0.5" />
-            </svg>
+      {/* ── Footer: Health Insurance Partners ── */}
+      <footer className="px-4 sm:px-6 lg:px-8 py-10 bg-[#eef4fb] border-t border-gray-200">
+        <div className="max-w-7xl mx-auto">
+          <h3 className="text-center text-lg font-semibold text-[#1d4f91] mb-6">Health Insurance Partners</h3>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-6">
+            <div className="bg-white p-4 rounded-xl shadow-sm flex items-center justify-center w-44 h-24">
+              <img src="/images/insurance/image1.png" alt="Insurance partner 1" className="max-h-full max-w-full object-contain" />
+            </div>
+
+            <div className="bg-white p-4 rounded-xl shadow-sm flex items-center justify-center w-44 h-24">
+              <img src="/images/insurance/image2.png" alt="Insurance partner 2" className="max-h-full max-w-full object-contain" />
+            </div>
+
+            <div className="bg-white p-4 rounded-xl shadow-sm flex items-center justify-center w-44 h-24">
+              <img src="/images/insurance/image3.png" alt="Insurance partner 3" className="max-h-full max-w-full object-contain" />
+            </div>
           </div>
 
-          {/* Info row */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-600">
             <div className="flex items-center gap-2">
               <span className="text-[#1d4f91] font-semibold">🔒 Secured by Paystack</span>
@@ -460,7 +443,7 @@ const Payment = () => {
             </div>
           </div>
         </div>
-      </div>
+      </footer>
 
       {/* ── Payment modal ── */}
       {selectedService && (
