@@ -75,10 +75,7 @@ const Hero = () => {
           </div>
 
           <div className="absolute bottom-8 left-6 bg-white/95 backdrop-blur-md border border-slate-200 rounded-3xl px-5 py-4 shadow-xl max-w-xs">
-            <p className="text-sm uppercase tracking-[0.24em] text-slate-500 mb-2">Father's Day Offer</p>
-            <p className="text-lg font-semibold text-slate-900 leading-tight">
-              See the full offer with premium father-friendly care.
-            </p>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-500 mb-2"></p>
           </div>
         </div>
       </div>
