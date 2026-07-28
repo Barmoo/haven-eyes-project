@@ -22,16 +22,54 @@ const Testimonials = () => {
     },
   ];
 
+  const insurancePartners = [
+    { name: 'Insurance Partner 1', src: '/images/insurance/image1.png' },
+    { name: 'Insurance Partner 2', src: '/images/insurance/image2.png' },
+    { name: 'Insurance Partner 3', src: '/images/insurance/image3.png' },
+  ];
+
   return (
     <div className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-10">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-gray-900 mb-4">
             What Our Patients Say
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Real experiences from people who trust Haven Eye Ltd with their vision.
           </p>
+        </div>
+
+        <div className="mb-12 rounded-[28px] border border-[#dce8f5] bg-gradient-to-br from-[#f7fbff] via-white to-[#eef4fb] p-6 sm:p-8 shadow-[0_20px_60px_-25px_rgba(29,79,145,0.35)]">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            <div className="max-w-2xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#1d4f91] mb-2">
+                Insurance support
+              </p>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+                Trusted by leading health providers
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                We help patients coordinate their eye care with major insurance plans so appointments feel seamless and stress-free.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 flex-1">
+              {insurancePartners.map((partner) => (
+                <div
+                  key={partner.name}
+                  className="flex h-20 items-center justify-center rounded-2xl border border-[#dce8f5] bg-white/90 p-3 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+                >
+                  <img
+                    src={partner.src}
+                    alt={partner.name}
+                    className="max-h-full max-w-full object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

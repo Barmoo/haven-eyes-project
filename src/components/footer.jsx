@@ -116,27 +116,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Health Insurance Partners */}
-      <div className="px-4 sm:px-6 lg:px-8 py-10 bg-[#0f2a47] border-t border-white/10">
-        <div className="max-w-7xl mx-auto">
-          <h3 className="text-center text-lg font-semibold text-white mb-6">Health Insurance Partners</h3>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <div className="bg-white/10 p-4 rounded-xl flex items-center justify-center w-44 h-24">
-              <img src="/images/insurance/image1.png" alt="Insurance partner 1" className="max-h-full max-w-full object-contain" />
-            </div>
-
-            <div className="bg-white/10 p-4 rounded-xl flex items-center justify-center w-44 h-24">
-              <img src="/images/insurance/image2.png" alt="Insurance partner 2" className="max-h-full max-w-full object-contain" />
-            </div>
-
-            <div className="bg-white/10 p-4 rounded-xl flex items-center justify-center w-44 h-24">
-              <img src="/images/insurance/image3.png" alt="Insurance partner 3" className="max-h-full max-w-full object-contain" />
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="px-4 sm:px-6 lg:px-8 py-6">
