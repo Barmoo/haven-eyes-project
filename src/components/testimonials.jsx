@@ -58,12 +58,12 @@ const Testimonials = () => {
               {insurancePartners.map((partner) => (
                 <div
                   key={partner.name}
-                  className="flex h-20 items-center justify-center rounded-2xl border border-[#dce8f5] bg-white/90 p-3 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+                  className="flex h-28 items-center justify-center rounded-2xl border border-[#dce8f5] bg-white/90 p-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
                 >
                   <img
                     src={partner.src}
                     alt={partner.name}
-                    className="max-h-full max-w-full object-contain"
+                    className="max-h-full max-w-full object-contain scale-110"
                     loading="lazy"
                   />
                 </div>
