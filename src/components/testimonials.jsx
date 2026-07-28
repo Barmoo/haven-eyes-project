@@ -40,35 +40,27 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="mb-12 rounded-[28px] border border-[#dce8f5] bg-gradient-to-br from-[#f7fbff] via-white to-[#eef4fb] p-6 sm:p-8 shadow-[0_20px_60px_-25px_rgba(29,79,145,0.35)]">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-            <div className="max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#1d4f91] mb-2">
-                Insurance support
-              </p>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                Trusted by leading health providers
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                We help patients coordinate their eye care with major insurance plans so appointments feel seamless and stress-free.
-              </p>
-            </div>
+        <div className="mb-12 rounded-[32px] border border-[#dce8f5] bg-gradient-to-br from-[#f7fbff] via-white to-[#eef4fb] p-6 sm:p-10 shadow-[0_25px_80px_-30px_rgba(29,79,145,0.4)]">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl sm:text-3xl font-semibold text-gray-900">
+              Trusted by leading health providers
+            </h3>
+          </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 flex-1">
-              {insurancePartners.map((partner) => (
-                <div
-                  key={partner.name}
-                  className="flex h-28 items-center justify-center rounded-2xl border border-[#dce8f5] bg-white/90 p-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
-                >
-                  <img
-                    src={partner.src}
-                    alt={partner.name}
-                    className="max-h-full max-w-full object-contain scale-110"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-6">
+            {insurancePartners.map((partner) => (
+              <div
+                key={partner.name}
+                className="flex h-36 sm:h-40 items-center justify-center overflow-hidden rounded-[24px] border border-[#dce8f5] bg-white/95 p-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+              >
+                <img
+                  src={partner.src}
+                  alt={partner.name}
+                  className="max-h-full max-w-full object-contain scale-100"
+                  loading="lazy"
+                />
+              </div>
+            ))}
           </div>
         </div>
 
